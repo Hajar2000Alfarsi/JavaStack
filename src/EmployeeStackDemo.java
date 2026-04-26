@@ -9,5 +9,7 @@ public class EmployeeStackDemo {
         employeeAction.push("Employee C updated a record");
         employeeAction.push("Employee D logged out");
         employeeAction.push("Employee E changed password");
+
+        System.out.println("Employee Actios: " + employeeAction);
     }
 }
