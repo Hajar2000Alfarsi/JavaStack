@@ -17,10 +17,13 @@ public class EmployeeStackSearch {
                        ": " + employeeAction.get(i));
         }
 
-        System.out.println("Postion of 'Employee C updated a record': " +
+        System.out.println("\nPostion of 'Employee C updated a record': " +
                 employeeAction.search("Employee C updated a record"));
 
         System.out.println("Position of 'Employee F deleted a file': " +
                 employeeAction.search("Employee F deleted a file"));
+
+        System.out.println("\nContains 'Employee D logged out': " +
+                employeeAction.contains("Employee D logged out"));
     }
 }
