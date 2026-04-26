@@ -11,6 +11,10 @@ public class EmployeeStackSearch {
         employeeAction.push("Employee E changed password");
         employeeAction.push("Employee F deleted a file");
 
-
+        System.out.println("Stack (Top to Buttom): ");
+        for (int i=employeeAction.size()-1; i >= 0; i--){
+            System.out.println("Position: " + (employeeAction.size() - i) +
+                       ": " + employeeAction.get(i));
+        }
     }
 }
