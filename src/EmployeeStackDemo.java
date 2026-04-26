@@ -14,5 +14,6 @@ public class EmployeeStackDemo {
 
         employeeAction.push("Employee F deleted a file");
 
+        System.out.println("Updated Employee Actions: " + employeeAction);
     }
 }
