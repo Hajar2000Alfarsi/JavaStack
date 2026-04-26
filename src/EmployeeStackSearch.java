@@ -16,5 +16,9 @@ public class EmployeeStackSearch {
             System.out.println("Position: " + (employeeAction.size() - i) +
                        ": " + employeeAction.get(i));
         }
+
+        System.out.println("Postion of 'Employee C updated a record': " +
+                employeeAction.search("Employee C updated a record"));
+
     }
 }
