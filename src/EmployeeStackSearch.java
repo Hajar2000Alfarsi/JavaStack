@@ -25,5 +25,9 @@ public class EmployeeStackSearch {
 
         System.out.println("\nContains 'Employee D logged out': " +
                 employeeAction.contains("Employee D logged out"));
+
+
+        System.out.println("Contains 'Employee X logged out'" +
+                employeeAction.contains("Employee X logged out"));
     }
 }
