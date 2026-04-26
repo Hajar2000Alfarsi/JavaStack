@@ -11,5 +11,8 @@ public class EmployeeStackDemo {
         employeeAction.push("Employee E changed password");
 
         System.out.println("Employee Actios: " + employeeAction);
+
+        employeeAction.push("Employee F deleted a file");
+
     }
 }
