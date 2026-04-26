@@ -1,3 +1,4 @@
+import java.util.Iterator;
 import java.util.Stack;
 
 public class EmployeeStackSearch {
@@ -34,6 +35,8 @@ public class EmployeeStackSearch {
         for (int i = employeeAction.size() -1; i >= 0; i--) {
             System.out.println(employeeAction.get(i));
         }
+
+        Iterator<String> iterator= employeeAction.iterator();
 
         System.out.println("\nEmployee Action(bottom to top): ");
         for (String action: employeeAction) {
