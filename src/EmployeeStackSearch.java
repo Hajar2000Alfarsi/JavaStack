@@ -36,11 +36,11 @@ public class EmployeeStackSearch {
             System.out.println(employeeAction.get(i));
         }
 
-        Iterator<String> iterator= employeeAction.iterator();
-
         System.out.println("\nEmployee Action(bottom to top): ");
         for (String action: employeeAction) {
             System.out.println(action);
         }
+
+        Iterator<String> iterator= employeeAction.iterator();
     }
 }
