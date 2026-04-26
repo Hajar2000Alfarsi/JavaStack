@@ -29,5 +29,12 @@ public class EmployeeStackSearch {
 
         System.out.println("Contains 'Employee X logged out'" +
                 employeeAction.contains("Employee X logged out"));
+
+        System.out.println("Employee Action(top to bottom): ");
+        for (int i = employeeAction.size() -1; i >= 0; i--) {
+            System.out.println(employeeAction.get(i));
+        }
+
+
     }
 }
