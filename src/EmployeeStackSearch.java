@@ -20,5 +20,7 @@ public class EmployeeStackSearch {
         System.out.println("Postion of 'Employee C updated a record': " +
                 employeeAction.search("Employee C updated a record"));
 
+        System.out.println("Position of 'Employee F deleted a file': " +
+                employeeAction.search("Employee F deleted a file"));
     }
 }
