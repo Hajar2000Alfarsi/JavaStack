@@ -42,5 +42,11 @@ public class EmployeeStackSearch {
         }
 
         Iterator<String> iterator= employeeAction.iterator();
+        int index= 0;
+        System.out.println("\nEmployee Action Using Iterator");
+        while (iterator.hasNext()){
+            System.out.println("Index" + index + " : " + iterator.next());
+            index++;
+        }
     }
 }
