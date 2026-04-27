@@ -10,10 +10,12 @@ public class StringReversalAndPalindrome {
             return "";
         }
 
-        Stack<String> reverse= new Stack<>();
+        Stack<Character> reverse= new Stack<>();
 
+        //push each character
         for (int i = 0; i < input.length(); i++){
-
+            char ch= input.charAt(i);
+            reverse.push(ch);
         }
     }
 }
