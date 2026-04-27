@@ -11,6 +11,8 @@ public class TextEditorWithUndoRedo {
         if (undoStack.size() > 10){
             undoStack.remove(0);
         }
+        //add the input text to existing text
+        text += inputText;
     }
     public static void main(String[] args){
 
