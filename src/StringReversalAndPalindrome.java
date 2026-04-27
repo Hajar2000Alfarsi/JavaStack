@@ -35,8 +35,17 @@ public class StringReversalAndPalindrome {
     }
 
     public boolean isPalindrome(String input) {
+        //check if String is empty
         if (input == null) {
             return false;
         }
+
+        Stack<Character> inputText=new Stack<>();
+        //push each character to stack
+        for (int i = 0; i < input.length(); i++) {
+            inputText.push(input.charAt(i));
+        }
+
+
     }
 }
