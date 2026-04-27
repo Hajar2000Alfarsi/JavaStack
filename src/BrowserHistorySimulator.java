@@ -37,5 +37,8 @@ public class BrowserHistorySimulator {
         webpageUrl.pop();
         System.out.println("Current Page: " + webpageUrl.peek());
 
+        System.out.println("Current Page: " + webpageUrl.peek());
+
+
     }
 }
