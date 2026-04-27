@@ -21,6 +21,11 @@ public class DecimalToBinaryConverter {
 
         }
 
-
+        //build the binary number from the stack
+        String binary = "";
+        while (!num.isEmpty()) {
+            binary += num.pop();
+        }
+        return binary;
     }
 }
