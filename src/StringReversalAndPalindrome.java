@@ -46,6 +46,11 @@ public class StringReversalAndPalindrome {
             inputText.push(input.charAt(i));
         }
 
-
+        for (int i = 0; i < input.length(); i++) {
+            if (input.charAt(i) != inputText.pop()) {
+                return false;
+            }
+        }
+        return true;
     }
 }
