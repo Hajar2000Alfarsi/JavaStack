@@ -21,6 +21,11 @@ public class TextEditorWithUndoRedo {
         System.out.println("new Text: " + inputText);
     }
 
+    public void undo() {
+
+
+    }
+
     public static void main(String[] args){
 
 
