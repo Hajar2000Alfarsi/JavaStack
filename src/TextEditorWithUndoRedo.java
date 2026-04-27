@@ -13,6 +13,11 @@ public class TextEditorWithUndoRedo {
         }
         //add the input text to existing text
         text += inputText;
+
+        //clear redo stack
+        redoStack.clear();
+
+
     }
     public static void main(String[] args){
 
