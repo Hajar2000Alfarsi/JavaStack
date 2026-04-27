@@ -4,7 +4,10 @@ public class ParenthesesValidator {
 
     }
     public boolean isBalanced(String expression) {
-        Stack<Character> Parentheses = new Stack<>();
+        Stack<Character> parentheses = new Stack<>();
 
+        for (int i = 0; i < expression.length(); i++){
+
+        }
     }
 }
