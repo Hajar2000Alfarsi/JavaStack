@@ -2,6 +2,11 @@ import java.util.Stack;
 public class ParenthesesValidator {
     public static void main(String[] args) {
         String[] testCase= {"(a+b)","(a+b]","((a+b)*c)","([{}])","(((",""};
+
+        ParenthesesValidator testing= new ParenthesesValidator();
+        for (String test: testCase) {
+            System.out.println("\n" +test + " -> " + testing.isBalanced(test) + "\n");
+        }
     }
     public boolean isBalanced(String expression) {
         Stack<Character> parentheses = new Stack<>();
