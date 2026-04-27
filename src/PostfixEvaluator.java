@@ -19,6 +19,13 @@ public class PostfixEvaluator {
                 int num = Integer.parseInt(token);
                 stack.push(num);
                 System.out.println("Push number: " + num + " --> " + stack);
+            } else {//if the token is operator
+                if (stack.size() < 2) {
+                    System.out.println("Invalid expression");
+                }
+
+
+                }
             }
 
         }
