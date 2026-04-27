@@ -37,9 +37,12 @@ public class TextEditorWithUndoRedo {
     }
 
     public void redo(){
+        //Check if stack empty
         if (redoStack.isEmpty()) {
             System.out.println("Nothing to redo");
         }
+        //Add that text to undo stack
+        undoStack.push(text);
     }
 
     public static void main(String[] args){
