@@ -7,7 +7,7 @@ public class StringReversalAndPalindrome {
         for (String test:testCases) {
             System.out.println("\nOroginal Text: " + test +
                     " Reverse Text: " + testReverse.reverseString(test));
-
+            System.out.println("IS palindrome " + testReverse.isPalindrome(test));
         }
     }
     public String reverseString(String input){
@@ -34,4 +34,7 @@ public class StringReversalAndPalindrome {
             return reverse;
     }
 
+    public boolean isPalindrome(String input) {
+
+    }
 }
