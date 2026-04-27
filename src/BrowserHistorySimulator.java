@@ -51,6 +51,9 @@ public class BrowserHistorySimulator {
         System.out.println("Current page: " + webpageUrl.peek());
         System.out.println("History: " + webpageUrl);
 
-
+        System.out.println("\nFinal Browsing History: ");
+        for (String page: webpageUrl){
+            System.out.println(page);
+        }
     }
 }
