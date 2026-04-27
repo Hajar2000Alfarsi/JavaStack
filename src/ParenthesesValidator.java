@@ -7,6 +7,13 @@ public class ParenthesesValidator {
         Stack<Character> parentheses = new Stack<>();
 
         for (int i = 0; i < expression.length(); i++){
+            char ch= expression.charAt(i);
+
+            if (ch == '(' || ch == '[' || ch == '{') {
+                parentheses.push(ch);
+                System.out.println("push: " + ch + " -> " + parentheses);
+            }
+
 
         }
     }
