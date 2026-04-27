@@ -32,6 +32,8 @@ public class TextEditorWithUndoRedo {
         //Delete last action
         text = undoStack.pop();
 
+        //Display Redo for confirmation
+        System.out.println("Redo");
     }
 
     public static void main(String[] args){
