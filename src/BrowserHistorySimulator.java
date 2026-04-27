@@ -46,6 +46,10 @@ public class BrowserHistorySimulator {
         System.out.println("Current page: " +webpageUrl.peek());
         System.out.println("History: " + webpageUrl);
 
+        webpageUrl.push("twitter.com");
+        System.out.println("\nVisited twitter.com");
+        System.out.println("Current page: " + webpageUrl.peek());
+        System.out.println("History: " + webpageUrl);
 
 
     }
