@@ -21,6 +21,10 @@ public class StringReversalAndPalindrome {
         //String to store the reverse of stack
         String reverse= "";
 
+        //pop from stack and store that char in reverse to git the reverse
+        while (!text.isEmpty()){
+
+        }
 
     }
 }
