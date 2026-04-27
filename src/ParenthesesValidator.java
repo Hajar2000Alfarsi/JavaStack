@@ -16,6 +16,16 @@ public class ParenthesesValidator {
                 if (parentheses.isEmpty()) {
                     return false;
                 }
+
+                char top= parentheses.peek();
+                if (ch == ')' && top == '(' ||
+                        ch == ']' && top == '[' || ch == '}' && top == '{'){
+                    parentheses.pop();
+                    System.out.println("Pop: " + ch + " -> " + parentheses);
+                } else {
+                    System.out.println("Error: mismatch " + top + " and " + ch);
+                    return false;
+                }
             }
         }
     }
