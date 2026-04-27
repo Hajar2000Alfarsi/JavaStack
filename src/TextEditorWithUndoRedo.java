@@ -36,8 +36,10 @@ public class TextEditorWithUndoRedo {
         System.out.println("Redo");
     }
 
-    public void display(){
-
+    public void redo(){
+        if (redoStack.isEmpty()) {
+            System.out.println("Nothing to redo");
+        }
     }
 
     public static void main(String[] args){
