@@ -29,6 +29,8 @@ public class TextEditorWithUndoRedo {
         //Add that text to redo stack
         redoStack.push(text);
 
+        //Delete last action
+        text = undoStack.pop();
 
     }
 
