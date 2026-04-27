@@ -11,6 +11,5 @@ public class DecimalToBinaryConverter {
 
         Stack<Integer> num= new Stack<>();
 
-
     }
 }
