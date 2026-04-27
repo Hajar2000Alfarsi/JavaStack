@@ -5,9 +5,12 @@ public class StringReversalAndPalindrome {
 
     }
     public String reverseString(String input){
+        //chek if input null
         if (input == null){
             return "";
         }
+
+        Stack<String> reverse= new Stack<>();
 
     }
 }
