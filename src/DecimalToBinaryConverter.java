@@ -36,4 +36,7 @@ public class DecimalToBinaryConverter {
         return binary;
     }
 
+    public void displayConversionProcess(int decimal){
+
+    }
 }
