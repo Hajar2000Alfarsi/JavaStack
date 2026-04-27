@@ -34,6 +34,7 @@ public class TextEditorWithUndoRedo {
 
         //Display undo for confirmation
         System.out.println("undo");
+        display();
     }
 
     public void redo(){
@@ -47,6 +48,7 @@ public class TextEditorWithUndoRedo {
         text = redoStack.pop();
         //Display Redo for confirmation
         System.out.println("Redo");
+        display();
     }
 
     public void display() {
@@ -57,7 +59,16 @@ public class TextEditorWithUndoRedo {
     }
 
     public static void main(String[] args){
+        TextEditorWithUndoRedo editor= new TextEditorWithUndoRedo();
 
+        editor.type("Hello");
+        editor.type("World");
+        editor.undo();
+        editor.redo();
+        editor.type("!!!");
+        editor.undo();
+        editor.undo();
+        editor.redo();
 
     }
 }
