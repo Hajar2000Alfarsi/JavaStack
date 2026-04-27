@@ -40,5 +40,13 @@ public class BrowserHistorySimulator {
         System.out.println("\nCurrent Page: " + webpageUrl.peek());
 
         System.out.println("\nIs History empty? " + webpageUrl.isEmpty());
+
+        webpageUrl.push("linkedin.com");
+        System.out.println("\nVisited linkedin.com");
+        System.out.println("Current page: " +webpageUrl.peek());
+        System.out.println("History: " + webpageUrl);
+
+
+
     }
 }
