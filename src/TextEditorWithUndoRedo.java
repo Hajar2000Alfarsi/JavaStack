@@ -50,7 +50,10 @@ public class TextEditorWithUndoRedo {
     }
 
     public void display() {
-
+        System.out.println("Text: " + text);
+        System.out.println("Undo stack: " + undoStack);
+        System.out.println("Redo stack: " + redoStack);
+        System.out.println("------------------------------");
     }
 
     public static void main(String[] args){
