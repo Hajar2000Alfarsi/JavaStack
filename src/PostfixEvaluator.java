@@ -1,10 +1,17 @@
 import java.util.Stack;
 
-import static jdk.nashorn.internal.runtime.JSType.isNumber;
 
 public class PostfixEvaluator {
     public static void main(String[] args) {
         String[] postfix= {"3 4 +", "10 2 /", "5 1 2 + 4 * + 3 -", "6 2 * 3 /", "8 3 %"};
+
+        PostfixEvaluator testPostfix= new PostfixEvaluator();
+
+        for (String  exp:postfix) {
+            System.out.println("\nExpression: " + exp);
+            int result = testPostfix.evaluatePostfix(exp);
+            System.out.println("Result: " + result);
+        }
     }
 
     public int evaluatePostfix(String expression) {
@@ -50,10 +57,19 @@ public class PostfixEvaluator {
                         System.out.println("Invalid operator" + token);
 
                 }
-
-
+                stack.push(result);
+                System.out.println("Apply " + token + " -> " +stack);
             }
+        }
+        return stack.pop();
+    }
 
+    public boolean isNumber(String token) {
+        try {
+            Integer.parseInt(token);
+            return true;
+        } catch (Exception e) {
+            return false;
         }
     }
 }
