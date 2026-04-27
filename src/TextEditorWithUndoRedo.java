@@ -17,8 +17,10 @@ public class TextEditorWithUndoRedo {
         //clear redo stack
         redoStack.clear();
 
-
+        //display the new text
+        System.out.println("new Text: " + inputText);
     }
+
     public static void main(String[] args){
 
 
