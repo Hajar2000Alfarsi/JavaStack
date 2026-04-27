@@ -27,6 +27,30 @@ public class PostfixEvaluator {
                 int b = stack.pop();
                 int result = 0;
 
+                switch (token) {
+                    case "+":
+                        result = a + b;
+                        break;
+                    case "-":
+                        result = a - b;
+                        break;
+                    case "*":
+                        result = a * b;
+                        break;
+                    case "/":
+                        if (b == 0){
+                            System.out.println("Division by zero");
+                        }
+                        result = a / b;
+                        break;
+                    case "%":
+                        result = a % b;
+                        break;
+                    default:
+                        System.out.println("Invalid operator" + token);
+
+                }
+
 
             }
 
