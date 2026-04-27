@@ -3,4 +3,7 @@ public class ParenthesesValidator {
     public static void main(String[] args) {
 
     }
+    public boolean isBalanced(String expression) {
+
+    }
 }
