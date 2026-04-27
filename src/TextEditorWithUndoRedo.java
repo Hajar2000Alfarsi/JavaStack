@@ -22,9 +22,13 @@ public class TextEditorWithUndoRedo {
     }
 
     public void undo() {
+        //Check if stack empty
         if (undoStack.isEmpty()) {
             System.out.println("Nothing to indo");
         }
+        //Add that text to redo stack
+        redoStack.push(text);
+
 
     }
 
