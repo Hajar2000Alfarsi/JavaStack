@@ -12,5 +12,12 @@ public class PostfixEvaluator {
         //split expression by " " to take only numbers
         String[] tokens= expression.split(" ");
 
+        for (String token:tokens) {
+            //Check if the token is number or not
+            if (isNumber(token)) {
+                //convert token from String to Integer
+                int num = Integer.parseInt(token);
+            }
+        }
     }
 }
