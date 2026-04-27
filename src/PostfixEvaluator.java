@@ -17,7 +17,10 @@ public class PostfixEvaluator {
             if (isNumber(token)) {
                 //convert token from String to Integer
                 int num = Integer.parseInt(token);
+                stack.push(num);
+                System.out.println("Push number: " + num + " --> " + stack);
             }
+
         }
     }
 }
