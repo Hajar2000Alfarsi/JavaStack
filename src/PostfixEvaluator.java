@@ -23,9 +23,11 @@ public class PostfixEvaluator {
                 if (stack.size() < 2) {
                     System.out.println("Invalid expression");
                 }
+                int a = stack.pop();
+                int b = stack.pop();
+                int result = 0;
 
 
-                }
             }
 
         }
