@@ -12,5 +12,8 @@ public class StringReversalAndPalindrome {
 
         Stack<String> reverse= new Stack<>();
 
+        for (int i = 0; i < input.length(); i++){
+
+        }
     }
 }
