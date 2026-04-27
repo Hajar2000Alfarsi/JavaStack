@@ -1,7 +1,7 @@
 import java.util.Stack;
 public class ParenthesesValidator {
     public static void main(String[] args) {
-        String[] testCase= {"(a+b)","(a+b]","((a+b)*c)","([{}])","(((",""}
+        String[] testCase= {"(a+b)","(a+b]","((a+b)*c)","([{}])","(((",""};
     }
     public boolean isBalanced(String expression) {
         Stack<Character> parentheses = new Stack<>();
@@ -27,6 +27,12 @@ public class ParenthesesValidator {
                     return false;
                 }
             }
+        }
+        if (parentheses.isEmpty()) {
+            return true;
+        } else {
+            System.out.println("Error:unclosed brakets -> " +parentheses);
+            return false;
         }
     }
 }
