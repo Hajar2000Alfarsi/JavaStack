@@ -43,6 +43,8 @@ public class TextEditorWithUndoRedo {
         }
         //Add that text to undo stack
         undoStack.push(text);
+        //Delete last action
+        text = redoStack.pop();
     }
 
     public static void main(String[] args){
