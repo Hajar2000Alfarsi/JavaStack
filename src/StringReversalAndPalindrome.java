@@ -4,4 +4,7 @@ public class StringReversalAndPalindrome {
         String[] testCases= {"hello", "madam", "racecar", "java", "a", ""};
 
     }
+    public boolean reverseString(String input){
+
+    }
 }
