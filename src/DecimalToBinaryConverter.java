@@ -2,6 +2,13 @@ import java.util.Stack;
 public class DecimalToBinaryConverter {
     public static void main(String[] args) {
         int[] testNumbers= {0, 1, 5, 10, 25, 100};
+
+        DecimalToBinaryConverter testBinary = new DecimalToBinaryConverter();
+
+        for (int numbers: testNumbers){
+            System.out.println("\nDecimal: " + numbers);
+            System.out.println("Binary Number: " +testBinary.decimalToBinary(numbers));
+        }
     }
 
     public String decimalToBinary(int decimal){
@@ -28,4 +35,5 @@ public class DecimalToBinaryConverter {
         }
         return binary;
     }
+
 }
