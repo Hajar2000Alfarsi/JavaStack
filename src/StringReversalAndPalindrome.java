@@ -22,9 +22,9 @@ public class StringReversalAndPalindrome {
         String reverse= "";
 
         //pop from stack and store that char in reverse to git the reverse
-        while (!text.isEmpty()){
-
-        }
-
+            while (!text.isEmpty()){
+                reverse += text.pop();
+            }
+            return reverse;
     }
 }
