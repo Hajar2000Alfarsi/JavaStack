@@ -22,7 +22,9 @@ public class TextEditorWithUndoRedo {
     }
 
     public void undo() {
-
+        if (undoStack.isEmpty()) {
+            System.out.println("Nothing to indo");
+        }
 
     }
 
