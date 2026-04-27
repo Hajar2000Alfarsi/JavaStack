@@ -5,6 +5,12 @@ public class DecimalToBinaryConverter {
     }
 
     public String decimalToBinary(int decimal){
+        if (decimal == 0){
+            return "0";
+        }
+
+        Stack<Integer> num= new Stack<>();
+
 
     }
 }
