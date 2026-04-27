@@ -28,5 +28,10 @@ public class BrowserHistorySimulator {
         System.out.println("\nVisited wikipedia.org");
         System.out.println("Current page: " + webpageUrl.peek());
         System.out.println("History: " + webpageUrl);
+
+        System.out.println("\nPress Back.. ");
+        webpageUrl.pop();
+        System.out.println("Current Page: " + webpageUrl.peek());
+
     }
 }
