@@ -49,6 +49,10 @@ public class TextEditorWithUndoRedo {
         System.out.println("Redo");
     }
 
+    public void display() {
+
+    }
+
     public static void main(String[] args){
 
 
