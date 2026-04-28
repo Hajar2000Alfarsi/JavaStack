@@ -16,6 +16,8 @@ public class HtmlTagValidator {
 
         //checking each tokens using for each loop
         for (String token: tokens) {
+            //make sure there is no extra spaces in beginning or end of token
+            token = token.trim();
 
         }
     }
