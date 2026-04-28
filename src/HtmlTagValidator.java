@@ -8,7 +8,11 @@ public class HtmlTagValidator {
     }
 
     public boolean validateHtmlTags(String html) {
+        //Create stack to store HTML tags
         Stack<String> htmlStack = new Stack<>();
+
+        //Create array to store each tag without < or >
+        String[] tokens = html.split("<|>");
 
     }
 
