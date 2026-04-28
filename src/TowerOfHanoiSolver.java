@@ -17,7 +17,11 @@ public class TowerOfHanoiSolver {
         }
     }
 
-    public void solveHanoi(int n, char from, char to, char aux){
+    public void moveDisk(char fromPeg, char toPeg){
 
+    }
+
+
+    public void solveHanoi(int n, char from, char to, char aux){
     }
 }
