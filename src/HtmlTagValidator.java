@@ -29,6 +29,11 @@ public class HtmlTagValidator {
                 continue;
             }
 
+            //Check if tag is closing tag
+            if (token.startsWith("/")) {
+
+            }
+
         }
     }
 
