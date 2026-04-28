@@ -40,6 +40,10 @@ public class HtmlTagValidator {
                     return false;
                  }
 
+                //Take open tage using pop()
+                String openTag = htmlStack.pop();
+
+
         }
     }
 
