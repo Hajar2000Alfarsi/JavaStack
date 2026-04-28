@@ -43,8 +43,12 @@ public class HtmlTagValidator {
                 //Take open tage using pop()
                 String openTag = htmlStack.pop();
 
-
-        }
+                //check if opening tag match closing tag
+                if (!openTag.equals(tag)) {
+                    System.out.println("Error: mismatch " + openTag + " vs " + tag);
+                    return false;
+                }
+        } else {
     }
 
 }
