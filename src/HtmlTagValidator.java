@@ -5,6 +5,12 @@ public class HtmlTagValidator {
                        "<b><i>text</i></b>", "<div><br/></div>",
                 "<html><body></body></html>", "<div><p>Test</p>",
                 "<div><span></div></span>", "<h1>Title</h1><p>Paragraph</p>"};
+
+        HtmlTagValidator validator= new HtmlTagValidator();
+        for (String html: tests) {
+            System.out.println("\nCheck: " + html);
+            System.out.println("valid? " + validator.validateHtmlTags(html));
+        }
     }
 
     public boolean validateHtmlTags(String html) {
@@ -21,6 +27,11 @@ public class HtmlTagValidator {
 
             //Check the token if empty or not
             if (token.isEmpty()) {
+                continue;
+            }
+
+            // ignore text
+            if (!token.startsWith("/") && !token.endsWith("/") && !Character.isLetter(token.charAt(0))) {
                 continue;
             }
 
