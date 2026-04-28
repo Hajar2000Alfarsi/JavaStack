@@ -19,6 +19,10 @@ public class HtmlTagValidator {
             //make sure there is no extra spaces in beginning or end of token
             token = token.trim();
 
+            //Check the token if empty or not
+            if (token.isEmpty()){
+                continue;;
+            }
         }
     }
 
