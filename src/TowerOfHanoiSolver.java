@@ -11,7 +11,10 @@ public class TowerOfHanoiSolver {
     }
 
     public void initializePegs(int numDisks){
-
+        //Push numbers to stack
+        for (int i = numDisks; i >= 1 ; i--) {
+            A.push(i);
+        }
 
     }
 }
