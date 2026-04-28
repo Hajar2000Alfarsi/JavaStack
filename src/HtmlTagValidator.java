@@ -14,6 +14,10 @@ public class HtmlTagValidator {
         //Create array to store each tag without < or >
         String[] tokens = html.split("<|>");
 
+        //checking each tokens using for each loop
+        for (String token: tokens) {
+
+        }
     }
 
 }
