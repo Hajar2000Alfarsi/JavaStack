@@ -52,7 +52,9 @@ public class HtmlTagValidator {
             else {
                 //remove attribute and keep only tag
                 String tagName = token.split(" ")[0];
-
+                //push tag name to stack
+                htmlStack.push(tagName);
+                System.out.println("Push: " + tagName + " -->" + htmlStack);
             }
     }
 
