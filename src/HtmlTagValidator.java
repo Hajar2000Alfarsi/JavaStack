@@ -21,8 +21,14 @@ public class HtmlTagValidator {
 
             //Check the token if empty or not
             if (token.isEmpty()){
-                continue;;
+                continue;
             }
+
+            //check if tag is self-closing like <br/>
+            if (token.endsWith("/")){
+                continue;
+            }
+
         }
     }
 
