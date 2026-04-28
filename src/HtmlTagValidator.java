@@ -31,7 +31,8 @@ public class HtmlTagValidator {
 
             //Check if tag is closing tag
             if (token.startsWith("/")) {
-
+                //Create a string to take only tag without "/"
+                String tag = token.substring(1);
             }
 
         }
