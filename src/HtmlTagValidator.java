@@ -7,5 +7,9 @@ public class HtmlTagValidator {
                 "<div><span></div></span>", "<h1>Title</h1><p>Paragraph</p>"};
     }
 
+    public boolean validateHtmlTags(String html) {
+        Stack<String> htmlStack = new Stack<>();
+
+    }
 
 }
