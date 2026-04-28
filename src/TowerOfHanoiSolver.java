@@ -15,6 +15,9 @@ public class TowerOfHanoiSolver {
         for (int i = numDisks; i >= 1 ; i--) {
             A.push(i);
         }
+    }
+
+    public void solveHanoi(int n, char from, char to, char aux){
 
     }
 }
