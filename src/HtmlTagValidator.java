@@ -33,7 +33,12 @@ public class HtmlTagValidator {
             if (token.startsWith("/")) {
                 //Create a string to take only tag without "/"
                 String tag = token.substring(1);
-            }
+
+                //if stack still empty return false
+                if(htmlStack.isEmpty()) {
+                    System.out.println("Error: Closing tag without opening " + tag);
+                    return false;
+                 }
 
         }
     }
