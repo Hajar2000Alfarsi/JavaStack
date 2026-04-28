@@ -48,7 +48,10 @@ public class HtmlTagValidator {
                     System.out.println("Error: mismatch " + openTag + " vs " + tag);
                     return false;
                 }
-        } else {
+        } //Check if tag is opening tag
+            else {
+
+            }
     }
 
 }
