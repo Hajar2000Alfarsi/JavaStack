@@ -50,6 +50,8 @@ public class HtmlTagValidator {
                 }
         } //Check if tag is opening  tag
             else {
+                //remove attribute and keep only tag
+                String tagName = token.split(" ")[0];
 
             }
     }
