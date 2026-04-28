@@ -5,7 +5,13 @@ public class TowerOfHanoiSolver {
     static Stack<Integer> B = new Stack<>();
     static Stack<Integer> C = new Stack<>();
 
+    static int moves = 0;
     public static void main(String[] args) {
+
+    }
+
+    public void initializePegs(int numDisks){
+
 
     }
 }
