@@ -15,17 +15,17 @@ public class HtmlTagValidator {
         String[] tokens = html.split("<|>");
 
         //checking each tokens using for each loop
-        for (String token: tokens) {
+        for (String token : tokens) {
             //make sure there is no extra spaces in beginning or end of token
             token = token.trim();
 
             //Check the token if empty or not
-            if (token.isEmpty()){
+            if (token.isEmpty()) {
                 continue;
             }
 
             //check if tag is self-closing like <br/>
-            if (token.endsWith("/")){
+            if (token.endsWith("/")) {
                 continue;
             }
 
@@ -35,10 +35,10 @@ public class HtmlTagValidator {
                 String tag = token.substring(1);
 
                 //if stack still empty return false
-                if(htmlStack.isEmpty()) {
+                if (htmlStack.isEmpty()) {
                     System.out.println("Error: Closing tag without opening " + tag);
                     return false;
-                 }
+                }
 
                 //Take open tage using pop()
                 String openTag = htmlStack.pop();
@@ -48,7 +48,7 @@ public class HtmlTagValidator {
                     System.out.println("Error: mismatch " + openTag + " vs " + tag);
                     return false;
                 }
-        } //Check if tag is opening  tag
+            } //Check if tag is opening  tag
             else {
                 //remove attribute and keep only tag
                 String tagName = token.split(" ")[0];
@@ -56,6 +56,12 @@ public class HtmlTagValidator {
                 htmlStack.push(tagName);
                 System.out.println("Push: " + tagName + " -->" + htmlStack);
             }
+        }
+        //Check if stack contain any value
+        if (!htmlStack.isEmpty()) {
+            System.out.println("Error: unclosed tags " + htmlStack);
+            return false;
+        }
+        return true;
     }
-
 }
