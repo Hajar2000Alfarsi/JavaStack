@@ -22,5 +22,9 @@ public class BrowserNavigationSystem {
 
     }
 
+    public void showCurrentPage(){
+
+    }
+
 
 }
