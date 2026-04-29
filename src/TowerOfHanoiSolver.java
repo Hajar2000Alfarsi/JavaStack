@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.Stack;
 public class TowerOfHanoiSolver {
     //create 3 stacks
@@ -21,6 +22,14 @@ public class TowerOfHanoiSolver {
         }
     }
 
+    //get peg based on name
+    public static Stack<Integer> getPeg(char peg) {
+        if (peg == 'A') return A;
+        if (peg == 'B') return B;
+        return C;
+    }
+
+
     public void moveDisk(char fromPeg, char toPeg){
 
     }
@@ -30,5 +39,9 @@ public class TowerOfHanoiSolver {
     }
 
     public void solveHanoi(int n, char from, char to, char aux){
+    }
+
+    public void displayPegs(){
+
     }
 }
