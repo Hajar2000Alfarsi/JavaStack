@@ -34,10 +34,13 @@ public class TowerOfHanoiSolver {
 
     }
 
-    public void isValidMove(char fromPeg, char toPeg){
-        Stack<Integer> from = getPeg(fromPeg);
-        Stack<Integer> to = getPeg(toPeg);
+    public boolean isValidMove(char fromPeg, char toPeg){
+        Stack<Integer> source = getPeg(fromPeg);
+        Stack<Integer> destination = getPeg(toPeg);
 
+        if (source.empty()) return false;
+        if (destination.empty()) return true;
+        return source.peek() < source.peek();
     }
 
     public void solveHanoi(int n, char from, char to, char aux){
