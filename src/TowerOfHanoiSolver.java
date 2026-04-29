@@ -58,6 +58,9 @@ public class TowerOfHanoiSolver {
         if (n == 1){
             moveDisk(from,to);
         }
+        //Move n-1 to aux
+        solveHanoi(n - 1, from, aux, to);
+
     }
 
     public void displayPegs(){
