@@ -25,6 +25,9 @@ public class TowerOfHanoiSolver {
 
     }
 
+    public void isValidMove(char fromPeg, char toPeg){
+
+    }
 
     public void solveHanoi(int n, char from, char to, char aux){
     }
