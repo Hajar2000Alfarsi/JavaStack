@@ -67,6 +67,12 @@ public class TowerOfHanoiSolver {
     }
 
     public void displayPegs(){
+        //Display current state of pegs
+        System.out.println("\nCurrent status: ");
+        System.out.println("peg A: " + A);
+        System.out.println("Peg B: " + B);
+        System.out.println("Peg C: " + C);
+        System.out.println("________________________");
 
     }
 }
