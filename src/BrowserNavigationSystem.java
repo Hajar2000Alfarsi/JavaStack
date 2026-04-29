@@ -9,4 +9,8 @@ public class BrowserNavigationSystem {
     public static void main(String[] args){
 
     }
+
+    public void visitPage(String url){
+
+    }
 }
