@@ -26,5 +26,8 @@ public class BrowserNavigationSystem {
 
     }
 
+    public void showHistory(){
+
+    }
 
 }
