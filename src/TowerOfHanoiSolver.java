@@ -54,6 +54,10 @@ public class TowerOfHanoiSolver {
     }
 
     public void solveHanoi(int n, char from, char to, char aux){
+        //if only one disk in stack
+        if (n == 1){
+            moveDisk(from,to);
+        }
     }
 
     public void displayPegs(){
