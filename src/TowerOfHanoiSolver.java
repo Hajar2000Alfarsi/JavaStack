@@ -42,6 +42,10 @@ public class TowerOfHanoiSolver {
         if (isValidMove(fromPeg, toPeg)) {
             Stack<Integer> source = getPeg(fromPeg);
             Stack<Integer> destination = getPeg(toPeg);
+            //move disk from source to destination
+            int disk = source.pop();
+            destination.push(disk);
+            moves++;
 
         }
     }
