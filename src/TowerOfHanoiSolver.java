@@ -62,6 +62,8 @@ public class TowerOfHanoiSolver {
         solveHanoi(n - 1, from, aux, to);
         //Move largest disk
         moveDisk(from, to);
+        //Move n-1 to destination
+        solveHanoi(n - 1, aux, to, from);
     }
 
     public void displayPegs(){
