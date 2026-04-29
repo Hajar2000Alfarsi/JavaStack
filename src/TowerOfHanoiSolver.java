@@ -39,7 +39,11 @@ public class TowerOfHanoiSolver {
     }
 
     public void moveDisk(char fromPeg, char toPeg){
+        if (isValidMove(fromPeg, toPeg)) {
+            Stack<Integer> source = getPeg(fromPeg);
+            Stack<Integer> destination = getPeg(toPeg);
 
+        }
     }
 
     public void solveHanoi(int n, char from, char to, char aux){
