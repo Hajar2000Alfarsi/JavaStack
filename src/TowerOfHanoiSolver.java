@@ -8,10 +8,17 @@ public class TowerOfHanoiSolver {
 
     static int moves = 0;
     public static void main(String[] args) {
+        int n=3;
+        initializePegs(n);
+        solveHanoi(n,'A','B','C');
+        int expectedMoves = (int) Math.pow(2,n)-1;
+
+        System.out.println("\nTotal Moves Made: " + moves);
+        System.out.println("Theoretical minimum moves: " + expectedMoves);
 
     }
 
-    public void initializePegs(int numDisks){
+    public static void initializePegs(int numDisks){
         //Clear all stacks to make sure it empty
         A.clear();
         B.clear();
@@ -29,16 +36,16 @@ public class TowerOfHanoiSolver {
         return C;
     }
 
-    public boolean isValidMove(char fromPeg, char toPeg){
+    public static boolean isValidMove(char fromPeg, char toPeg){
         Stack<Integer> source = getPeg(fromPeg);
         Stack<Integer> destination = getPeg(toPeg);
 
         if (source.empty()) return false;
         if (destination.empty()) return true;
-        return source.peek() < source.peek();
+        return source.peek() < destination.peek();
     }
 
-    public void moveDisk(char fromPeg, char toPeg){
+    public static void moveDisk(char fromPeg, char toPeg){
         if (isValidMove(fromPeg, toPeg)) {
             Stack<Integer> source = getPeg(fromPeg);
             Stack<Integer> destination = getPeg(toPeg);
@@ -53,10 +60,11 @@ public class TowerOfHanoiSolver {
         }
     }
 
-    public void solveHanoi(int n, char from, char to, char aux){
+    public static void solveHanoi(int n, char from, char to, char aux){
         //if only one disk in stack
         if (n == 1){
             moveDisk(from,to);
+            return;
         }
         //Move n-1 to aux
         solveHanoi(n - 1, from, aux, to);
@@ -66,7 +74,7 @@ public class TowerOfHanoiSolver {
         solveHanoi(n - 1, aux, to, from);
     }
 
-    public void displayPegs(){
+    public static void displayPegs(){
         //Display current state of pegs
         System.out.println("\nCurrent status: ");
         System.out.println("peg A: " + A);
