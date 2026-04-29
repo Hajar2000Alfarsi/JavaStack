@@ -13,4 +13,10 @@ public class BrowserNavigationSystem {
     public void visitPage(String url){
 
     }
+
+    public void goBack(){
+
+    }
+
+
 }
