@@ -46,7 +46,8 @@ public class TowerOfHanoiSolver {
             int disk = source.pop();
             destination.push(disk);
             moves++;
-
+            System.out.println("Move disk " + disk + " from " + fromPeg + " to " + toPeg);
+            displayPegs();
         }
     }
 
