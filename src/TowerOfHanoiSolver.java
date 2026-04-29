@@ -35,6 +35,8 @@ public class TowerOfHanoiSolver {
     }
 
     public void isValidMove(char fromPeg, char toPeg){
+        Stack<Integer> from = getPeg(fromPeg);
+        Stack<Integer> to = getPeg(toPeg);
 
     }
 
