@@ -29,11 +29,6 @@ public class TowerOfHanoiSolver {
         return C;
     }
 
-
-    public void moveDisk(char fromPeg, char toPeg){
-
-    }
-
     public boolean isValidMove(char fromPeg, char toPeg){
         Stack<Integer> source = getPeg(fromPeg);
         Stack<Integer> destination = getPeg(toPeg);
@@ -41,6 +36,10 @@ public class TowerOfHanoiSolver {
         if (source.empty()) return false;
         if (destination.empty()) return true;
         return source.peek() < source.peek();
+    }
+
+    public void moveDisk(char fromPeg, char toPeg){
+
     }
 
     public void solveHanoi(int n, char from, char to, char aux){
