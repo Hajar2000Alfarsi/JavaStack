@@ -48,6 +48,8 @@ public class TowerOfHanoiSolver {
             moves++;
             System.out.println("Move disk " + disk + " from " + fromPeg + " to " + toPeg);
             displayPegs();
+        } else {
+            System.out.println("Invalid move attemped from " + fromPeg + " to " + toPeg);
         }
     }
 
