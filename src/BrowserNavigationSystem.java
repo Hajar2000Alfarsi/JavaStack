@@ -78,6 +78,11 @@ public class BrowserNavigationSystem {
     }
 
     public void showHistory(){
+        System.out.println("\n===== Session Pages =====");
+
+        for (String page : sessionPages) {
+            System.out.println(page);
+        }
 
     }
 
