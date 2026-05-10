@@ -15,6 +15,10 @@ public class BrowserNavigationSystem {
     //Max
     int Max_History = 10;
     public static void main(String[] args){
+        BrowserNavigationSystem browser = new BrowserNavigationSystem();
+
+        System.out.println("===== Browser Navigation System =====");
+        browser.displayState();
 
     }
 
