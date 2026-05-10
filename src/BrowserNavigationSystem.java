@@ -32,13 +32,7 @@ public class BrowserNavigationSystem {
         forwardStack.clear();
 
         System.out.println("\nVisited " + url);
-
-    }
-
-    public void displayState() {
-
-        showCurrentPage();
-        showHistory();
+        displayState();
     }
 
 
@@ -56,6 +50,12 @@ public class BrowserNavigationSystem {
 
     public void showHistory(){
 
+    }
+
+    public void displayState() {
+
+        showCurrentPage();
+        showHistory();
     }
 
 }
