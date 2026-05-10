@@ -28,6 +28,8 @@ public class BrowserNavigationSystem {
         currentPage = url;
 
         sessionPages.add(url);
+
+        forwardStack.clear();
     }
 
     public void goBack(){
