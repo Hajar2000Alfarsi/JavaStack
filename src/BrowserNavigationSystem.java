@@ -38,10 +38,11 @@ public class BrowserNavigationSystem {
 
     public void goBack(){
         if (backStack.isEmpty()) {
-            System.out.println("\nCannot go back. No prevoius pages");
+            System.out.println("\nCannot go back. No previous  pages");
             return;
         }
 
+        forwardStack.push(currentPage);
     }
 
     public void goForward(){
