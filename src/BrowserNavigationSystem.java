@@ -21,9 +21,13 @@ public class BrowserNavigationSystem {
     public void visitPage(String url) {
         if (currentPage != null) {
             if (backStack.size() >= Max_History) {
-                backStack.remove(0)
+                backStack.remove(0);
             }
         }
+
+        currentPage = url;
+
+
     }
 
     public void goBack(){
