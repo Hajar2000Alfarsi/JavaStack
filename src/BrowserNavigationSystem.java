@@ -43,6 +43,8 @@ public class BrowserNavigationSystem {
         }
 
         forwardStack.push(currentPage);
+
+        currentPage = backStack.pop();
     }
 
     public void goForward(){
