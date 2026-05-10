@@ -24,6 +24,32 @@ public class BrowserNavigationSystem {
         browser.visitPage("youtube.com");
         browser.visitPage("github.com");
         browser.visitPage("stackoverflow.com");
+
+        browser.goBack();
+        browser.goBack();
+
+        browser.goForward();
+
+        browser.visitPage("wikipedia.org");
+
+        browser.goBack();
+
+        browser.visitPage("openai.com");
+
+        browser.goBack();
+        browser.goForward();
+
+        browser.visitPage("linkedin.com");
+        browser.visitPage("twitter.com");
+        browser.visitPage("instagram.com");
+        browser.visitPage("facebook.com");
+        browser.visitPage("reddit.com");
+        browser.visitPage("amazon.com");
+        browser.visitPage("netflix.com");
+
+        browser.goForward();
+
+        browser.showHistory();
     }
 
     public void visitPage(String url) {
