@@ -45,10 +45,16 @@ public class BrowserNavigationSystem {
         forwardStack.push(currentPage);
 
         currentPage = backStack.pop();
+
+        System.out.println("\nWent Back");
+        displayState();
     }
 
     public void goForward(){
-
+        if (forwardStack.isEmpty()) {
+            System.out.println("\nCannot go forward. No next pages.");
+            return;
+        }
     }
 
     public void showCurrentPage(){
