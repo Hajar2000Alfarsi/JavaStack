@@ -20,6 +20,10 @@ public class BrowserNavigationSystem {
         System.out.println("===== Browser Navigation System =====");
         browser.displayState();
 
+        browser.visitPage("google.com");
+        browser.visitPage("youtube.com");
+        browser.visitPage("github.com");
+        browser.visitPage("stackoverflow.com");
     }
 
     public void visitPage(String url) {
