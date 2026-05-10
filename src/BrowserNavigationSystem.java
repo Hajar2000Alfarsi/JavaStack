@@ -71,6 +71,10 @@ public class BrowserNavigationSystem {
         if (!backStack.isEmpty()) {
             System.out.println("Previous Page: " + backStack.peek());
         }
+
+        if (!forwardStack.isEmpty()) {
+            System.out.println("Next Page: " + forwardStack.peek());
+        }
     }
 
     public void showHistory(){
