@@ -37,6 +37,10 @@ public class BrowserNavigationSystem {
 
 
     public void goBack(){
+        if (backStack.isEmpty()) {
+            System.out.println("\nCannot go back. No prevoius pages");
+            return;
+        }
 
     }
 
