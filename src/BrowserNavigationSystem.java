@@ -30,7 +30,17 @@ public class BrowserNavigationSystem {
         sessionPages.add(url);
 
         forwardStack.clear();
+
+        System.out.println("\nVisited " + url);
+
     }
+
+    public void displayState() {
+
+        showCurrentPage();
+        showHistory();
+    }
+
 
     public void goBack(){
 
