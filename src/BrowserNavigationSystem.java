@@ -55,6 +55,9 @@ public class BrowserNavigationSystem {
             System.out.println("\nCannot go forward. No next pages.");
             return;
         }
+
+        backStack.push(currentPage);
+
     }
 
     public void showCurrentPage(){
