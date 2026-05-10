@@ -58,10 +58,15 @@ public class BrowserNavigationSystem {
 
         backStack.push(currentPage);
 
+        currentPage = forwardStack.pop();
+
+        System.out.println("\nWent Forward");
+        displayState();
     }
 
     public void showCurrentPage(){
-
+        System.out.println("Back Stack: " + backStack);
+        System.out.println("Forward Stack: " + forwardStack);
     }
 
     public void showHistory(){
