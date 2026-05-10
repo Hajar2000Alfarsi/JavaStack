@@ -1,7 +1,7 @@
 import java.util.Stack;
 
 public class EmployeeStackDemo {
-    public static void mani(String[] args){
+    public static void main(String[] args){
         Stack<String> employeeAction= new Stack<>();
 
         employeeAction.push("Employee A Logged in");
