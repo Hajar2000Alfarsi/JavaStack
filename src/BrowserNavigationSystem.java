@@ -27,7 +27,7 @@ public class BrowserNavigationSystem {
 
         currentPage = url;
 
-
+        sessionPages.add(url);
     }
 
     public void goBack(){
