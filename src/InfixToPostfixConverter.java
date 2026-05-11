@@ -6,6 +6,10 @@ public class InfixToPostfixConverter {
                 ch == '%' || ch == '^';
     }
 
+    public static int getPrecedence(char operator){
+
+    }
+
     public static void main(String[] args) {
 
     }
