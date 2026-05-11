@@ -78,6 +78,10 @@ public class InfixToPostfixConverter {
 
                 stack.push(ch);
             }
+            System.out.println("Token: " + ch);
+            System.out.println("Stack: " + stack);
+            System.out.println("Postfix: " + postfix);
+            System.out.println("---------------------");
 
             }
     }
