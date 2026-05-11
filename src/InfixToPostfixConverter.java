@@ -145,6 +145,8 @@ public class InfixToPostfixConverter {
                 stack.push(result);
             }
         }
+        return stack.pop();
+    }
 
     public static void main(String[] args) {
 
