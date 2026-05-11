@@ -33,6 +33,10 @@ public class InfixToPostfixConverter {
 
         StringBuilder postfix = new StringBuilder();
 
+        System.out.println("\n=================================");
+        System.out.println("Infix Expression: " + infix);
+        System.out.println("=================================");
+
 
     }
 
