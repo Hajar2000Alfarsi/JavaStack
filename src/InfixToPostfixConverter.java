@@ -90,6 +90,10 @@ public class InfixToPostfixConverter {
         return postfix.toString();
     }
 
+    public static double applyOperation(double a, double b, char operator) {
+
+    }
+
     public static void main(String[] args) {
 
     }
