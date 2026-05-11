@@ -130,6 +130,12 @@ public class InfixToPostfixConverter {
             if (token.isEmpty()) {
                 continue;
             }
+
+            if (Character.isDigit(token.charAt(0))
+                    || token.charAt(0) == '.') {
+
+                stack.push(Double.parseDouble(token));
+            }
         }
 
     public static void main(String[] args) {
