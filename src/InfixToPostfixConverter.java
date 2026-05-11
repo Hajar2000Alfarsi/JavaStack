@@ -37,7 +37,15 @@ public class InfixToPostfixConverter {
         System.out.println("Infix Expression: " + infix);
         System.out.println("=================================");
 
+        for (int i = 0; i < infix.length(); i++) {
 
+            char ch = infix.charAt(i);
+
+            // Ignore spaces
+            if (ch == ' ') {
+                continue;
+            }
+        }
     }
 
     public static void main(String[] args) {
