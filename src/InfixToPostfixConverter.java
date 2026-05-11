@@ -86,6 +86,8 @@ public class InfixToPostfixConverter {
         while (!stack.isEmpty()) {
             postfix.append(stack.pop()).append(" ");
         }
+
+        return postfix.toString();
     }
 
     public static void main(String[] args) {
