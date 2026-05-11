@@ -59,7 +59,10 @@ public class InfixToPostfixConverter {
                 postfix.append(" ");
 
                 i--;
-        }
+            } else if (ch == '(') {
+                stack.push(ch);
+            }
+            }
     }
 
     public static void main(String[] args) {
