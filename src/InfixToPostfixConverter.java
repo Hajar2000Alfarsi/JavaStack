@@ -167,5 +167,28 @@ public class InfixToPostfixConverter {
 
                 "12.5 + 7.5 * 2"
         };
+        for (String expression : expressions) {
+
+            try {
+
+                String postfix =
+                        infixToPostfix(expression);
+
+                System.out.println("\nFinal Postfix: "
+                        + postfix);
+
+                double result =
+                        evaluatePostfix(postfix);
+
+                System.out.println("Result: " + result);
+
+            } catch (Exception e) {
+
+                System.out.println("Error: "
+                        + e.getMessage());
+            }
+
+            System.out.println("\n========================================");
+        }
     }
 }
