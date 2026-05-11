@@ -135,6 +135,14 @@ public class InfixToPostfixConverter {
                     || token.charAt(0) == '.') {
 
                 stack.push(Double.parseDouble(token));
+            } else {
+                double b = stack.pop();
+                double a = stack.pop();
+
+                double result =
+                        applyOperation(a, b, token.charAt(0));
+
+                stack.push(result);
             }
         }
 
