@@ -82,8 +82,10 @@ public class InfixToPostfixConverter {
             System.out.println("Stack: " + stack);
             System.out.println("Postfix: " + postfix);
             System.out.println("---------------------");
-
             }
+        while (!stack.isEmpty()) {
+            postfix.append(stack.pop()).append(" ");
+        }
     }
 
     public static void main(String[] args) {
