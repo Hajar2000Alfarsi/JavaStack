@@ -25,6 +25,9 @@ public class InfixToPostfixConverter {
                 return -1;
         }
     }
+
+    public static String infixToPostfix(String infix){
+
     }
 
     public static void main(String[] args) {
