@@ -45,6 +45,20 @@ public class InfixToPostfixConverter {
             if (ch == ' ') {
                 continue;
             }
+            if (Character.isDigit(ch) || ch == '.') {
+
+                // Handle multi-digit numbers
+                while (i < infix.length() &&
+                        (Character.isDigit(infix.charAt(i))
+                                || infix.charAt(i) == '.')) {
+
+                    postfix.append(infix.charAt(i));
+                    i++;
+                }
+
+                postfix.append(" ");
+
+                i--;
         }
     }
 
