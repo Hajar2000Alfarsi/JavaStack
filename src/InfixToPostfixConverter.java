@@ -121,6 +121,10 @@ public class InfixToPostfixConverter {
         }
     }
 
+    public static double evaluatePostfix(String postfix) {
+
+    }
+
     public static void main(String[] args) {
 
     }
