@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class InfixToPostfixConverter {
 
     public static boolean isOperator(char ch){
@@ -27,7 +29,7 @@ public class InfixToPostfixConverter {
     }
 
     public static String infixToPostfix(String infix){
-
+        Stack<Character> stack = new Stack<>();
     }
 
     public static void main(String[] args) {
