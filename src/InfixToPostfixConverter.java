@@ -122,8 +122,15 @@ public class InfixToPostfixConverter {
     }
 
     public static double evaluatePostfix(String postfix) {
+        Stack<Double> stack = new Stack<>();
 
-    }
+        String[] tokens = postfix.split(" ");
+
+        for (String token : tokens) {
+            if (token.isEmpty()) {
+                continue;
+            }
+        }
 
     public static void main(String[] args) {
 
