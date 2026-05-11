@@ -149,6 +149,23 @@ public class InfixToPostfixConverter {
     }
 
     public static void main(String[] args) {
+        String[] expressions = {
 
+                "3 + 4 * 2",
+
+                "(1 + 2) * 3",
+
+                "10 + 5 * 6",
+
+                "100 / ( 5 + 5 )",
+
+                "7 + 8 - 2",
+
+                "2 ^ 3 + 4",
+
+                "20 % 3 + 1",
+
+                "12.5 + 7.5 * 2"
+        };
     }
 }
