@@ -69,6 +69,14 @@ public class InfixToPostfixConverter {
                 if (!stack.isEmpty()) {
                     stack.pop();
                 }
+            } else if (isOperator(ch)) {
+                while (!stack.isEmpty()
+                        && getPrecedence(stack.peek()) >= getPrecedence(ch)) {
+
+                    postfix.append(stack.pop()).append(" ");
+                }
+
+                stack.push(ch);
             }
 
             }
