@@ -30,6 +30,10 @@ public class InfixToPostfixConverter {
 
     public static String infixToPostfix(String infix){
         Stack<Character> stack = new Stack<>();
+
+        StringBuilder postfix = new StringBuilder();
+
+
     }
 
     public static void main(String[] args) {
