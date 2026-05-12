@@ -45,6 +45,16 @@ public class QueueUsingTwoStacks {
 
             return null;
         }
+
+        transferElements();
+
+        T frontElement = outputStack.peek();
+
+        System.out.println("\nPEEK: " + frontElement);
+
+        displayStacks();
+
+        return frontElement;
     }
 
 }
