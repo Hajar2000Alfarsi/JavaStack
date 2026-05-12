@@ -154,6 +154,20 @@ public class NextGreaterElementFinder {
 
         System.out.println("---------------------------------------");
     }
+
+    public static void compareApproaches() {
+
+        System.out.println("\n=== TIME COMPLEXITY COMPARISON ===");
+
+        System.out.println("Brute Force Approach:");
+        System.out.println("- Uses nested loops");
+        System.out.println("- Time Complexity: O(n²)");
+
+        System.out.println("\nStack-Based Approach:");
+        System.out.println("- Each element pushed once");
+        System.out.println("- Each element popped once");
+        System.out.println("- Time Complexity: O(n)");
+    }
 }
 
 
