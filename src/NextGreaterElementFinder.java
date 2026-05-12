@@ -110,6 +110,12 @@ public class NextGreaterElementFinder {
                 stack.push(currentIndex);
             }
         }
+        return result;
+    }
+
+
+    public static int[] bruteForceNextGreater(int[] arr) {
+
     }
 }
 
