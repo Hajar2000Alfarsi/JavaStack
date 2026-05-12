@@ -26,8 +26,22 @@ public class NextGreaterElementFinder {
 
             // Pop while current element is greater
             while (!stack.isEmpty() && arr[i] > arr[stack.peek()]) {
+                int index = stack.pop();
 
+                result[index] = arr[i];
+
+                System.out.println(
+                        "Popped Index: " + index +
+                                " -> Next Greater for " + arr[index] +
+                                " is " + arr[i]
+                );
             }
+            // Push current index
+            stack.push(i);
+
+            System.out.println("Pushed Index: " + i);
+            System.out.println("Current Stack: " + stack);
         }
+
     }
 }
