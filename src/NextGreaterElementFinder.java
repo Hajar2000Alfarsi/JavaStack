@@ -87,6 +87,26 @@ public class NextGreaterElementFinder {
             return new int[0];
         }
 
+        int n = arr.length;
+
+        int[] result = new int[n];
+
+        Arrays.fill(result, -1);
+
+        Stack<Integer> stack = new Stack<>();
+
+        for (int i = 0; i < 2 * n; i++) {
+
+            int currentIndex = i % n;
+
+            while (!stack.isEmpty()
+                    && arr[currentIndex] > arr[stack.peek()]) {
+
+                int index = stack.pop();
+
+                result[index] = arr[currentIndex];
+            }
+
     }
 }
 
