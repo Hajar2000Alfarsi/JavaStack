@@ -229,9 +229,8 @@ public class NextGreaterElementFinder {
 
             System.out.println("\nBrute Force Result:");
             displayResults(arr, bruteForce);
-
-
         }
+        compareApproaches();
     }
 }
 
