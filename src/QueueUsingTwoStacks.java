@@ -29,6 +29,13 @@ public class QueueUsingTwoStacks {
         }
         transferElements();
 
+        T removedElement = outputStack.pop();
+
+        System.out.println("\nDEQUEUE: " + removedElement);
+
+        displayStacks();
+
+        return removedElement;
     }
 
     }
