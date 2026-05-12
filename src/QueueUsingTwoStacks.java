@@ -156,5 +156,7 @@ public class QueueUsingTwoStacks {
         System.out.println("After poll(): " + queue);
     }
 
+    public static void main(String[] args) {
 
+    }
     }
