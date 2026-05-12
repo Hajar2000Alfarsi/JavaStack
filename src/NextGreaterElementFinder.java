@@ -224,6 +224,13 @@ public class NextGreaterElementFinder {
             displayResults(arr, circular);
 
 
+            int[] bruteForce =
+                    bruteForceNextGreater(arr);
+
+            System.out.println("\nBrute Force Result:");
+            displayResults(arr, bruteForce);
+
+
         }
     }
 }
