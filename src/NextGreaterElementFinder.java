@@ -217,6 +217,13 @@ public class NextGreaterElementFinder {
             displayResults(arr, nextSmaller);
 
 
+            int[] circular =
+                    findNextGreaterElementCircular(arr);
+
+            System.out.println("\nCircular Next Greater:");
+            displayResults(arr, circular);
+
+
         }
     }
 }
