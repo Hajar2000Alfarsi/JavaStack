@@ -115,7 +115,9 @@ public class NextGreaterElementFinder {
 
 
     public static int[] bruteForceNextGreater(int[] arr) {
-
+        if (arr == null || arr.length == 0) {
+            return new int[0];
+        }
     }
 }
 
