@@ -21,7 +21,12 @@ public class QueueUsingTwoStacks {
     }
 
     public T dequeue() {
+        if (isEmpty()) {
 
+            System.out.println("\nQueue is empty. Cannot dequeue.");
+
+            return null;
+        }
     }
 
     }
