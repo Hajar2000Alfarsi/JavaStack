@@ -141,7 +141,18 @@ public class NextGreaterElementFinder {
     }
 
     public static void displayResults(int[] arr, int[] result) {
+        System.out.println("\n---------------------------------------");
+        System.out.printf("%-10s %-15s%n", "Element", "Next Value");
+        System.out.println("---------------------------------------");
 
+        for (int i = 0; i < arr.length; i++) {
+
+            System.out.printf("%-10d %-15d%n",
+                    arr[i],
+                    result[i]);
+        }
+
+        System.out.println("---------------------------------------");
     }
 }
 
