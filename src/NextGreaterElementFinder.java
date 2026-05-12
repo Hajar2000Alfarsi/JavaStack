@@ -185,6 +185,20 @@ public class NextGreaterElementFinder {
                 test5,
                 test6
         };
+
+        for (int i = 0; i < testArrays.length; i++) {
+
+            System.out.println("\n=====================================");
+            System.out.println("TEST CASE " + (i + 1));
+            System.out.println("=====================================");
+
+            int[] arr = testArrays[i];
+
+            System.out.println("Input Array: "
+                    + Arrays.toString(arr));
+
+
+        }
     }
 }
 
