@@ -57,4 +57,11 @@ public class QueueUsingTwoStacks {
         return frontElement;
     }
 
-}
+
+    public boolean isEmpty() {
+        return inputStack.isEmpty() && outputStack.isEmpty();
+    }
+
+
+
+    }
