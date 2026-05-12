@@ -118,6 +118,26 @@ public class NextGreaterElementFinder {
         if (arr == null || arr.length == 0) {
             return new int[0];
         }
+        int n = arr.length;
+
+        int[] result = new int[n];
+
+        Arrays.fill(result, -1);
+
+        for (int i = 0; i < n; i++) {
+
+            for (int j = i + 1; j < n; j++) {
+
+                if (arr[j] > arr[i]) {
+
+                    result[i] = arr[j];
+
+                    break;
+                }
+            }
+        }
+
+        return result;
     }
 }
 
