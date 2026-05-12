@@ -203,6 +203,12 @@ public class NextGreaterElementFinder {
                 System.out.println("Array is empty.");
                 continue;
             }
+
+            int[] nextGreater =
+                    findNextGreaterElement(arr);
+
+            System.out.println("\nNext Greater Element:");
+            displayResults(arr, nextGreater);
         }
     }
 }
