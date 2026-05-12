@@ -106,7 +106,10 @@ public class NextGreaterElementFinder {
 
                 result[index] = arr[currentIndex];
             }
-
+            if (i < n) {
+                stack.push(currentIndex);
+            }
+        }
     }
 }
 
