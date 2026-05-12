@@ -198,6 +198,11 @@ public class NextGreaterElementFinder {
                     + Arrays.toString(arr));
 
 
+            if (arr.length == 0) {
+
+                System.out.println("Array is empty.");
+                continue;
+            }
         }
     }
 }
