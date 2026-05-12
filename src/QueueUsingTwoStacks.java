@@ -9,4 +9,14 @@ public class QueueUsingTwoStacks {
         inputStack = new Stack<>();
         outputStack = new Stack<>();
     }
+
+    public void enqueue(T element) {
+
+        // Push element into input stack
+        inputStack.push(element);
+
+        System.out.println("\nENQUEUE: " + element);
+
+        displayStacks();
+    }
 }
