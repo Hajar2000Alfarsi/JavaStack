@@ -22,7 +22,12 @@ public class NextGreaterElementFinder {
 
         // Traverse array
         for (int i = 0; i < n; i++) {
+            System.out.println("\nCurrent Element: " + arr[i]);
 
+            // Pop while current element is greater
+            while (!stack.isEmpty() && arr[i] > arr[stack.peek()]) {
+
+            }
         }
     }
 }
