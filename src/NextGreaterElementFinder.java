@@ -42,6 +42,15 @@ public class NextGreaterElementFinder {
             System.out.println("Pushed Index: " + i);
             System.out.println("Current Stack: " + stack);
         }
+        // Remaining elements have no greater element
+        while (!stack.isEmpty()) {
+            int index = stack.pop();
 
+            System.out.println(
+                    "No greater element for " + arr[index]
+            );
+        }
+
+        return result;
     }
 }
