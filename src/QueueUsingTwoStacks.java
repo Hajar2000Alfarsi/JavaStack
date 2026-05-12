@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class QueueUsingTwoStacks {
@@ -140,7 +142,18 @@ public class QueueUsingTwoStacks {
         System.out.println("- Peek: O(1)");
         System.out.println("- More efficient for production systems");
 
+        Queue<Integer> queue = new LinkedList<>();
 
+        queue.offer(10);
+        queue.offer(20);
+        queue.offer(30);
+
+        System.out.println("\nBuilt-in Queue Example:");
+        System.out.println(queue);
+
+        queue.poll();
+
+        System.out.println("After poll(): " + queue);
     }
 
 
