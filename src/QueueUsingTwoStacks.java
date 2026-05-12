@@ -82,5 +82,21 @@ public class QueueUsingTwoStacks {
     }
 
 
+    public void displayStacks() {
+
+        System.out.println("--------------------------------");
+
+        System.out.println("Input Stack  : " + inputStack);
+
+        System.out.println("Output Stack : " + outputStack);
+
+        displayLogicalQueue();
+
+        System.out.println("Queue Size   : " + size());
+
+        System.out.println("--------------------------------");
+    }
+
+
 
     }
