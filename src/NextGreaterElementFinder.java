@@ -170,7 +170,21 @@ public class NextGreaterElementFinder {
     }
 
     public static void main(String[] args) {
+        int[] test1 = {4, 5, 2, 25};
+        int[] test2 = {13, 7, 6, 12};
+        int[] test3 = {1, 2, 3, 4, 5};
+        int[] test4 = {9, 8, 7, 6, 5};
+        int[] test5 = {10};
+        int[] test6 = {};
 
+        int[][] testArrays = {
+                test1,
+                test2,
+                test3,
+                test4,
+                test5,
+                test6
+        };
     }
 }
 
