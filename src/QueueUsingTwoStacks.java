@@ -97,6 +97,12 @@ public class QueueUsingTwoStacks {
         System.out.println("--------------------------------");
     }
 
+    private void displayLogicalQueue() {
+
+        System.out.print("Logical Queue: [");
+
+
+    }
 
 
     }
