@@ -139,6 +139,10 @@ public class NextGreaterElementFinder {
 
         return result;
     }
+
+    public static void displayResults(int[] arr, int[] result) {
+
+    }
 }
 
 
