@@ -55,7 +55,9 @@ public class NextGreaterElementFinder {
     }
 
     public static int[] findNextSmallerElement(int[] arr) {
-
+        if (arr == null || arr.length == 0) {
+            return new int[0];
+        }
     }
 }
 
