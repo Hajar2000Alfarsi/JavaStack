@@ -27,6 +27,8 @@ public class QueueUsingTwoStacks {
 
             return null;
         }
+        transferElements();
+
     }
 
     }
