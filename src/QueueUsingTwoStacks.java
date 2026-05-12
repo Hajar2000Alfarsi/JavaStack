@@ -101,6 +101,16 @@ public class QueueUsingTwoStacks {
 
         System.out.print("Logical Queue: [");
 
+        for (int i = outputStack.size() - 1; i >= 0; i--) {
+
+            System.out.print(outputStack.get(i));
+
+            if (i != 0 || !inputStack.isEmpty()) {
+
+                System.out.print(", ");
+            }
+        }
+
 
     }
 
