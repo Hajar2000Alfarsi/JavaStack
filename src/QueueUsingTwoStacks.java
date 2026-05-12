@@ -68,5 +68,19 @@ public class QueueUsingTwoStacks {
     }
 
 
+    private void transferElements() {
+
+        if (outputStack.isEmpty()) {
+
+            System.out.println("\nTransferring elements...");
+
+            while (!inputStack.isEmpty()) {
+
+                outputStack.push(inputStack.pop());
+            }
+        }
+    }
+
+
 
     }
