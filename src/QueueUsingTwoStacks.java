@@ -19,4 +19,9 @@ public class QueueUsingTwoStacks {
 
         displayStacks();
     }
-}
+
+    public T dequeue() {
+
+    }
+
+    }
