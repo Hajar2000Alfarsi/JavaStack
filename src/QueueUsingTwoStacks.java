@@ -124,5 +124,24 @@ public class QueueUsingTwoStacks {
         System.out.println("]");
     }
 
+    public static void compareWithBuiltInQueue() {
+
+        System.out.println("\n========== PERFORMANCE COMPARISON ==========");
+
+        System.out.println("\nQueue Using Two Stacks:");
+        System.out.println("- Enqueue: O(1)");
+        System.out.println("- Dequeue: Amortized O(1)");
+        System.out.println("- Peek: Amortized O(1)");
+        System.out.println("- Uses two stacks internally");
+
+        System.out.println("\nJava Built-in Queue:");
+        System.out.println("- Enqueue: O(1)");
+        System.out.println("- Dequeue: O(1)");
+        System.out.println("- Peek: O(1)");
+        System.out.println("- More efficient for production systems");
+
+
+    }
+
 
     }
