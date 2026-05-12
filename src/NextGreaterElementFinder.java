@@ -168,6 +168,10 @@ public class NextGreaterElementFinder {
         System.out.println("- Each element popped once");
         System.out.println("- Time Complexity: O(n)");
     }
+
+    public static void main(String[] args) {
+
+    }
 }
 
 
