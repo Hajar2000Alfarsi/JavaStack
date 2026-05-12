@@ -83,6 +83,9 @@ public class NextGreaterElementFinder {
     }
 
     public static int[] findNextGreaterElementCircular(int[] arr) {
+        if (arr == null || arr.length == 0) {
+            return new int[0];
+        }
 
     }
 }
