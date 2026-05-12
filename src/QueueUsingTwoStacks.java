@@ -38,4 +38,8 @@ public class QueueUsingTwoStacks {
         return removedElement;
     }
 
+    public T peek() {
+
     }
+
+}
