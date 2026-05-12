@@ -111,7 +111,17 @@ public class QueueUsingTwoStacks {
             }
         }
 
+        for (int i = 0; i < inputStack.size(); i++) {
 
+            System.out.print(inputStack.get(i));
+
+            if (i != inputStack.size() - 1) {
+
+                System.out.print(", ");
+            }
+        }
+
+        System.out.println("]");
     }
 
 
