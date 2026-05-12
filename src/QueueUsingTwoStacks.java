@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-public class QueueUsingTwoStacks {
+public class QueueUsingTwoStacks<T> {
     private Stack<T> inputStack;
     private Stack<T> outputStack;
 
@@ -157,6 +157,19 @@ public class QueueUsingTwoStacks {
     }
 
     public static void main(String[] args) {
+        QueueUsingTwoStacks queue =
+                new QueueUsingTwoStacks();
+
+        System.out.println("========== QUEUE USING TWO STACKS ==========");
+
+
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.peek();
+        queue.dequeue();
+        queue.enqueue(40);
+        queue.enqueue(50);
 
     }
     }
