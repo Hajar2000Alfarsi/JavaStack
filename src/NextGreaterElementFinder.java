@@ -19,5 +19,10 @@ public class NextGreaterElementFinder {
         // Stack stores indices
         Stack<Integer> stack = new Stack<>();
         System.out.println("\n=== NEXT GREATER ELEMENT PROCESS ===");
+
+        // Traverse array
+        for (int i = 0; i < n; i++) {
+
+        }
     }
 }
