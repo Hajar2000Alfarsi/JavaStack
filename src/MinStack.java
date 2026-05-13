@@ -147,4 +147,20 @@ public class MinStack {
         System.out.println("peek()   -> O(1)");
         System.out.println("getMin() -> O(1)");
     }
+
+    public static void main(String[] args) {
+
+        MinStack stack= new MinStack();
+
+        stack.push(8);
+        stack.push(3);
+        stack.push(6);
+        stack.push(2);
+        stack.pop();
+        System.out.println(stack.peek());
+        System.out.println(stack.getMin());
+
+
+
+    }
 }
