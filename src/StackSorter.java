@@ -124,7 +124,13 @@ public class StackSorter {
         Stack<Integer> stack4 = new Stack<>();
         Stack<Integer> stack5 = new Stack<>();
 
-
+        // Stack 1 - Random values
+        stack1.push(34);
+        stack1.push(3);
+        stack1.push(31);
+        stack1.push(98);
+        stack1.push(92);
+        stack1.push(23);
     }
 
 
