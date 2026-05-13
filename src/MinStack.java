@@ -102,4 +102,14 @@ public class MinStack {
 
         return mainStack.isEmpty();
     }
+
+    // Display both stacks
+    public void display() {
+
+        System.out.println("--------------------------------");
+
+        System.out.println("Main Stack : " + mainStack);
+
+        System.out.println("Min Stack  : " + minStack);
+    }
 }
