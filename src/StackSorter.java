@@ -36,6 +36,11 @@ public class StackSorter {
                             " into Temp Stack"
             );
 
+            // Display stacks
+            displayStack(stack, "Original Stack");
+            displayStack(tempStack, "Temp Stack");
+
         }
+        return tempStack;
     }
 }
