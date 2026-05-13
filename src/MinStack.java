@@ -76,4 +76,24 @@ public class MinStack {
 
         return top;
     }
+
+
+    // Get minimum element in O(1)
+    public Integer getMin() {
+
+        if (minStack.isEmpty()) {
+
+            System.out.println("\nStack is empty. No minimum value.");
+
+            return null;
+        }
+
+        int min = minStack.peek();
+
+        System.out.println("\nCURRENT MINIMUM: " + min);
+
+        display();
+
+        return min;
+    }
 }
