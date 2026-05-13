@@ -65,7 +65,13 @@ public class StackSorter {
 
     // Helper method for recursive sort
     public static void insertInSortedOrder(Stack<Integer> stack, int value) {
+        // Insert if stack empty OR value larger
+        if (stack.isEmpty() || value > stack.peek()) {
 
+            stack.push(value);
+
+            return;
+        }
     }
 
 }
