@@ -124,4 +124,27 @@ public class MinStack {
 
         System.out.println("--------------------------------");
     }
+
+    // Compare both approaches
+    public static void compareApproaches() {
+
+        System.out.println("\n========== MEMORY COMPARISON ==========");
+
+        System.out.println("\nApproach 1: Store Min with Each Element");
+        System.out.println("- Each stack node stores:");
+        System.out.println("  (value, currentMin)");
+        System.out.println("- Faster access");
+        System.out.println("- Higher memory usage");
+
+        System.out.println("\nApproach 2: Separate Min Stack");
+        System.out.println("- Uses extra stack only for minimums");
+        System.out.println("- More space optimized");
+        System.out.println("- Preferred approach");
+
+        System.out.println("\nTime Complexity:");
+        System.out.println("push()   -> O(1)");
+        System.out.println("pop()    -> O(1)");
+        System.out.println("peek()   -> O(1)");
+        System.out.println("getMin() -> O(1)");
+    }
 }
