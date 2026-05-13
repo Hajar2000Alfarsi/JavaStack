@@ -116,6 +116,14 @@ public class StackSorter {
 
     // Main method
     public static void main(String[] args) {
+    // Create 5 different stacks
+
+        Stack<Integer> stack1 = new Stack<>();
+        Stack<Integer> stack2 = new Stack<>();
+        Stack<Integer> stack3 = new Stack<>();
+        Stack<Integer> stack4 = new Stack<>();
+        Stack<Integer> stack5 = new Stack<>();
+
 
     }
 
