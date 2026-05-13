@@ -47,7 +47,10 @@ public class StackSorter {
 
     // Recursive sorting method
     public static void sortStackRecursive(Stack<Integer> stack) {
-
+        // Base case
+        if (stack.isEmpty()) {
+            return;
+        }
     }
 
 }
