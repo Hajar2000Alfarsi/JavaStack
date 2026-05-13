@@ -43,4 +43,11 @@ public class StackSorter {
         }
         return tempStack;
     }
+
+
+    // Recursive sorting method
+    public static void sortStackRecursive(Stack<Integer> stack) {
+
+    }
+
 }
