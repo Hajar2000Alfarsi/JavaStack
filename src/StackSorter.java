@@ -51,6 +51,9 @@ public class StackSorter {
         if (stack.isEmpty()) {
             return;
         }
+
+        // Remove top element
+        int top = stack.pop();
     }
 
 }
