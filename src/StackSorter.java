@@ -28,6 +28,13 @@ public class StackSorter {
                                 " back to Original Stack"
                 );
             }
+            // Push current element in correct position
+            tempStack.push(current);
+
+            System.out.println(
+                    "Pushed " + current +
+                            " into Temp Stack"
+            );
 
         }
     }
