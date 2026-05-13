@@ -116,44 +116,27 @@ public class StackSorter {
 
     // Main method
     public static void main(String[] args) {
-    // Create 5 different stacks
+        Stack<Integer> s1 = new Stack<>();
+        s1.push(3);
+        s1.push(1);
+        s1.push(4);
+        s1.push(2);
 
-        Stack<Integer> stack1 = new Stack<>();
-        Stack<Integer> stack2 = new Stack<>();
-        Stack<Integer> stack3 = new Stack<>();
-        Stack<Integer> stack4 = new Stack<>();
-        Stack<Integer> stack5 = new Stack<>();
+        System.out.println("Befor sorting : ");
+        displayStack(s1,"Stak1");
+        System.out.println("After sorting : ");
+        Stack <Integer>sorted1 =sortStack(s1);
+        displayStack(sorted1,"sorted Stack");
 
-        // Stack 1 - Random values
-        stack1.push(34);
-        stack1.push(3);
-        stack1.push(31);
-        stack1.push(98);
-        stack1.push(92);
-        stack1.push(23);
-
-
-        // Stack 2 - Already sorted
-        stack2.push(100);
-        stack2.push(80);
-        stack2.push(60);
-        stack2.push(40);
-        stack2.push(20);
-
-
-        // Stack 3 - Reverse sorted
-        stack3.push(10);
-        stack3.push(20);
-        stack3.push(30);
-        stack3.push(40);
-        stack3.push(50);
-
-
-        // Stack 4 - Single element
-        stack4.push(7);
-
-
-        // Stack 5 - Empty stack
+        Stack<Integer> s2 = new Stack<>();
+        s2.push(3);
+        s2.push(1);
+        s2.push(4);
+        s2.push(2);
+        System.out.println("Befor sorting : ");
+        displayStack(s2,"Stak2");
+        sortStackRecursive(s2);
+        displayStack(s2, "Sorted Stack (Recursive)");
     }
 
 
