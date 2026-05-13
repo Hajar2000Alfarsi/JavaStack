@@ -111,5 +111,17 @@ public class MinStack {
         System.out.println("Main Stack : " + mainStack);
 
         System.out.println("Min Stack  : " + minStack);
+
+        // Display current minimum
+        if (!minStack.isEmpty()) {
+
+            System.out.println("Current Min: " + minStack.peek());
+
+        } else {
+
+            System.out.println("Current Min: Stack Empty");
+        }
+
+        System.out.println("--------------------------------");
     }
 }
