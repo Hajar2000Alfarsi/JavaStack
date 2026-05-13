@@ -75,6 +75,10 @@ public class StackSorter {
 
         // Remove top element
         int top = stack.pop();
+
+        // Recursive call
+        insertInSortedOrder(stack, value);
+
     }
 
 }
