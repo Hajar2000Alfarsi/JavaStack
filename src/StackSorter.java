@@ -139,6 +139,14 @@ public class StackSorter {
         stack2.push(60);
         stack2.push(40);
         stack2.push(20);
+
+
+        // Stack 3 - Reverse sorted
+        stack3.push(10);
+        stack3.push(20);
+        stack3.push(30);
+        stack3.push(40);
+        stack3.push(50);
     }
 
 
