@@ -113,4 +113,11 @@ public class StackSorter {
         System.out.println("- Worst Case: O(n²)");
     }
 
-}
+
+    // Main method
+    public static void main(String[] args) {
+
+    }
+
+
+    }
