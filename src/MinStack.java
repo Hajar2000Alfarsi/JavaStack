@@ -6,4 +6,11 @@ public class MinStack {
 
     // Min stack stores minimum values
     private Stack<Integer> minStack;
+
+    // Constructor
+    public MinStack() {
+
+        mainStack = new Stack<>();
+        minStack = new Stack<>();
+    }
 }
