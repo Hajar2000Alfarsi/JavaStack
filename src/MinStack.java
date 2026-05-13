@@ -44,5 +44,17 @@ public class MinStack {
 
         // Remove top element
         int removed = mainStack.pop();
+
+        // Sync min stack
+        if (removed == minStack.peek()) {
+
+            minStack.pop();
+        }
+
+        System.out.println("\nPOP: " + removed);
+
+        display();
+
+        return removed;
     }
 }
