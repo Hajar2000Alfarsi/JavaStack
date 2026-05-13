@@ -41,5 +41,8 @@ public class MinStack {
 
             return null;
         }
+
+        // Remove top element
+        int removed = mainStack.pop();
     }
 }
