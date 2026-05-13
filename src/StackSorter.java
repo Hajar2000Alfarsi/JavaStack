@@ -83,4 +83,13 @@ public class StackSorter {
         stack.push(top);
     }
 
+
+    // Display stack contents
+    public static void displayStack(
+            Stack<Integer> stack,
+            String name) {
+
+        System.out.println(name + ": " + stack);
+    }
+
 }
