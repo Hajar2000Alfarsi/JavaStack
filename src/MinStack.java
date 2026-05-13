@@ -57,4 +57,23 @@ public class MinStack {
 
         return removed;
     }
+
+    // Peek top element
+    public Integer peek() {
+
+        if (mainStack.isEmpty()) {
+
+            System.out.println("\nStack is empty. Nothing to peek.");
+
+            return null;
+        }
+
+        int top = mainStack.peek();
+
+        System.out.println("\nPEEK: " + top);
+
+        display();
+
+        return top;
+    }
 }
