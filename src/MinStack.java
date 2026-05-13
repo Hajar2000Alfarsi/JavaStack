@@ -34,6 +34,12 @@ public class MinStack {
 
     // Pop element from stack
     public Integer pop() {
+        // Check if stack is empty
+        if (mainStack.isEmpty()) {
 
+            System.out.println("\nStack is empty. Cannot pop.");
+
+            return null;
+        }
     }
 }
