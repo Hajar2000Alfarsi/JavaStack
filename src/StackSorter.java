@@ -57,6 +57,9 @@ public class StackSorter {
 
         // Recursively sort remaining stack
         sortStackRecursive(stack);
+
+        // Insert in sorted order
+        insertInSortedOrder(stack, top);
     }
 
 }
