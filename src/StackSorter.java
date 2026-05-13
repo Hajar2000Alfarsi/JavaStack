@@ -147,6 +147,10 @@ public class StackSorter {
         stack3.push(30);
         stack3.push(40);
         stack3.push(50);
+
+
+        // Stack 4 - Single element
+        stack4.push(7);
     }
 
 
