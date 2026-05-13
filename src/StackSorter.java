@@ -79,6 +79,8 @@ public class StackSorter {
         // Recursive call
         insertInSortedOrder(stack, value);
 
+        // Restore removed element
+        stack.push(top);
     }
 
 }
