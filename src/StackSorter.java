@@ -10,7 +10,10 @@ public class StackSorter {
 
         // Process until original stack becomes empty
         while (!stack.isEmpty()) {
+            // Remove top element
+            int current = stack.pop();
 
+            System.out.println("\nPopped from Original Stack: " + current);
         }
     }
 }
