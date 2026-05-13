@@ -7,5 +7,10 @@ public class StackSorter {
         Stack<Integer> tempStack = new Stack<>();
 
         System.out.println("\n=== ITERATIVE SORTING PROCESS ===");
+
+        // Process until original stack becomes empty
+        while (!stack.isEmpty()) {
+
+        }
     }
 }
