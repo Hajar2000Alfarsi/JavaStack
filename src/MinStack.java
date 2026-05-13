@@ -16,6 +16,7 @@ public class MinStack {
 
     // Push element into stack
     public void push(int value) {
-
+        // Push into main stack
+        mainStack.push(value);
     }
 }
