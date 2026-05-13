@@ -92,4 +92,25 @@ public class StackSorter {
         System.out.println(name + ": " + stack);
     }
 
+
+    // Compare iterative and recursive approaches
+    public static void compareApproaches() {
+
+        System.out.println("\n========== COMPARISON ==========");
+
+        System.out.println("\nIterative Approach:");
+        System.out.println("- Uses temporary stack");
+        System.out.println("- Easier to understand");
+        System.out.println("- Space Complexity: O(n)");
+
+        System.out.println("\nRecursive Approach:");
+        System.out.println("- Uses recursion call stack");
+        System.out.println("- Cleaner implementation");
+        System.out.println("- Space Complexity: O(n)");
+
+        System.out.println("\nTime Complexity:");
+        System.out.println("- Best Case: O(n)");
+        System.out.println("- Worst Case: O(n²)");
+    }
+
 }
