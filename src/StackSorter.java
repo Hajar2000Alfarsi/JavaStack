@@ -151,6 +151,9 @@ public class StackSorter {
 
         // Stack 4 - Single element
         stack4.push(7);
+
+
+        // Stack 5 - Empty stack
     }
 
 
