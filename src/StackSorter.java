@@ -14,6 +14,21 @@ public class StackSorter {
             int current = stack.pop();
 
             System.out.println("\nPopped from Original Stack: " + current);
+
+            //Move elements back if they are smaller
+            while (!tempStack.isEmpty()
+                    && tempStack.peek() < current) {
+
+                int moved = tempStack.pop();
+
+                stack.push(moved);
+
+                System.out.println(
+                        "Moved " + moved +
+                                " back to Original Stack"
+                );
+            }
+
         }
     }
 }
