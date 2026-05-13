@@ -72,6 +72,9 @@ public class StackSorter {
 
             return;
         }
+
+        // Remove top element
+        int top = stack.pop();
     }
 
 }
