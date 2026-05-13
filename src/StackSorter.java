@@ -54,6 +54,9 @@ public class StackSorter {
 
         // Remove top element
         int top = stack.pop();
+
+        // Recursively sort remaining stack
+        sortStackRecursive(stack);
     }
 
 }
