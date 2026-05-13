@@ -18,5 +18,16 @@ public class MinStack {
     public void push(int value) {
         // Push into main stack
         mainStack.push(value);
+
+        // Push into min stack if:
+        // min stack is empty OR value <= current minimum
+        if (minStack.isEmpty() || value <= minStack.peek()) {
+
+            minStack.push(value);
+        }
+
+        System.out.println("\nPUSH: " + value);
+
+        display();
     }
 }
