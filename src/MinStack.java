@@ -96,4 +96,10 @@ public class MinStack {
 
         return min;
     }
+
+    // Check if stack is empty
+    public boolean isEmpty() {
+
+        return mainStack.isEmpty();
+    }
 }
