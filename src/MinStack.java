@@ -13,4 +13,9 @@ public class MinStack {
         mainStack = new Stack<>();
         minStack = new Stack<>();
     }
+
+    // Push element into stack
+    public void push(int value) {
+
+    }
 }
