@@ -62,4 +62,10 @@ public class StackSorter {
         insertInSortedOrder(stack, top);
     }
 
+
+    // Helper method for recursive sort
+    public static void insertInSortedOrder(Stack<Integer> stack, int value) {
+
+    }
+
 }
