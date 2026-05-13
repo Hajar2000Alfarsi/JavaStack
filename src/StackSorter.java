@@ -131,6 +131,14 @@ public class StackSorter {
         stack1.push(98);
         stack1.push(92);
         stack1.push(23);
+
+
+        // Stack 2 - Already sorted
+        stack2.push(100);
+        stack2.push(80);
+        stack2.push(60);
+        stack2.push(40);
+        stack2.push(20);
     }
 
 
