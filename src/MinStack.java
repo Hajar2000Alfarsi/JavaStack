@@ -30,4 +30,10 @@ public class MinStack {
 
         display();
     }
+
+
+    // Pop element from stack
+    public Integer pop() {
+
+    }
 }
