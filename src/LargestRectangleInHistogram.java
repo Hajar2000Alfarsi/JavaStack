@@ -66,6 +66,22 @@ public class LargestRectangleInHistogram {
         System.out.println("\n--- Step-by-Step Stack Processing ---");
 
         while (index < heights.length) {
+            // Push index if stack is empty or current bar is taller
+            if (stack.isEmpty()
+                    || heights[index] >= heights[stack.peek()]) {
+
+                stack.push(index);
+
+                System.out.println("Push index " + index +
+                        " (height = " + heights[index] + ")");
+
+                System.out.println("Stack: " + stack);
+
+                index++;
+            }
+
+            else {
+        }
     }
 
 }
