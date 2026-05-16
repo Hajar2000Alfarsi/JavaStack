@@ -152,4 +152,14 @@ public class NQueensSolver {
                 if (queen.col == pos.col) {
                     return false;
             }
+
+                // Same diagonal
+                if (Math.abs(queen.row - pos.row)
+                        == Math.abs(queen.col - pos.col)) {
+
+                    return false;
+                }
+            }
+
+            return true;
 }
