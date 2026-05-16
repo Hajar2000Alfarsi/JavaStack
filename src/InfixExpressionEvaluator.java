@@ -149,7 +149,8 @@ public class InfixExpressionEvaluator {
 
     // Perform one calculation
     public static void performCalculation() {
-
+        // Pop operator
+        char operator = operatorStack.pop();
     }
 
 }
