@@ -47,6 +47,14 @@ public class InfixExpressionEvaluator {
         operandStack.clear();
         operatorStack.clear();
 
+        // Remove spaces from expression
+        expression = expression.replaceAll("\\s+", "");
+
+        int i = 0;
+
+        while (i < expression.length()) {
+
+            char ch = expression.charAt(i);
 
     }
 }
