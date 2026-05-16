@@ -151,7 +151,7 @@ public class NQueensSolver {
                 // Same column
                 if (queen.col == pos.col) {
                     return false;
-            }
+                }
 
                 // Same diagonal
                 if (Math.abs(queen.row - pos.row)
@@ -162,4 +162,12 @@ public class NQueensSolver {
             }
 
             return true;
+        }
+
+        // Display chessboard visually
+        public static void displayBoard(Stack<Position> queens, int n) {
+
+            System.out.println();
+
+    }
 }
