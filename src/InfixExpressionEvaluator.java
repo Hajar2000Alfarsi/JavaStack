@@ -186,4 +186,16 @@ public class InfixExpressionEvaluator {
 
         }
 
-}
+
+        // Handle division by zero
+        if (b == 0) {
+            throw new ArithmeticException("Division by zero");
+        }
+
+        return a / b;
+
+        case '%':
+
+
+
+    }
