@@ -161,5 +161,10 @@ public class LargestRectangleInHistogram {
 
         System.out.println("\nHistogram:");
 
+        // Edge case
+        if (heights.length == 0) {
+            System.out.println("(empty)");
+            return;
+        }
 
 }
