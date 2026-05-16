@@ -111,7 +111,10 @@ public class InfixExpressionEvaluator {
                 printStacks(String.valueOf(ch));
             }
 
+// Handle operators
+            else if (isOperator(ch)) {
 
+            }
 
         }
 }
