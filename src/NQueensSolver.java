@@ -57,7 +57,8 @@ public class NQueensSolver {
                 displayBoard(queens, n);
 
                 return;
-            }if (n == 2 || n == 3) {
+            }
+            if (n == 2 || n == 3) {
                 System.out.println("No solutions exist for N = " + n);
                 return;
             }
@@ -138,6 +139,15 @@ public class NQueensSolver {
                     row = last.row;
                     col = last.col + 1;
                 }
+
+            }
+        }
+
+        // Check if queen position is safe
+        public static boolean isSafe(Position pos,
+                                     Stack<Position> queens) {
+
+            for (Position queen : queens) {
 
             }
 }
