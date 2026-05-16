@@ -16,5 +16,23 @@ public class LargestRectangleInHistogram {
                 {7},
                 {}
         };
+
+        // Test all histograms
+        for (int i = 0; i < testCases.length; i++) {
+
+            System.out.println("\n======================================");
+            System.out.println("Histogram Test Case " + (i + 1));
+
+            int[] heights = testCases[i];
+
+            displayHistogram(heights);
+
+            int maxArea = findLargestRectangle(heights);
+
+            displayResult(heights, maxArea);
+
+            System.out.println("======================================");
+        }
     }
+
 }
