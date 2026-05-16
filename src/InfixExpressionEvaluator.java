@@ -5,4 +5,8 @@ public class InfixExpressionEvaluator {
 
     // Stack for operators
     static Stack<Character> operatorStack = new Stack<>();
+
+    public static void main(String[] args) {
+
+    }
 }
