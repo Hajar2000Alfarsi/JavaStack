@@ -229,5 +229,46 @@ public class NQueensSolver {
                     + (endTime - startTime)
                     + " ns");
         }
+
+
+        // Recursive backtracking method
+        public static void solveRecursive(int n,
+                                          int row,
+                                          Stack<Position> queens,
+                                          List<List<Position>> solutions) {
+
+            // Base case
+            if (row == n) {
+
+                solutions.add(new ArrayList<>(queens));
+
+                return;
+            }
+
+            // Try every column
+            for (int col = 0; col < n; col++) {
+
+                Position pos = new Position(row, col);
+
+                // Check if safe
+                if (isSafe(pos, queens)) {
+
+                    // Push queen
+                    queens.push(pos);
+
+                    // Recursive call
+                    solveRecursive(n,
+                            row + 1,
+                            queens,
+                            solutions);
+
+                    // Backtrack
+                    queens.pop();
+                }
+            }
+        }
+
+
+
     }
 }
