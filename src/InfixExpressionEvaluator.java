@@ -94,6 +94,12 @@ public class InfixExpressionEvaluator {
 
             // Handle closing parenthesis
             else if (ch == ')') {
+                // Solve until '(' appears
+                while (!operatorStack.isEmpty()
+                        && operatorStack.peek() != '(') {
+
+                    performCalculation();
+            }
 
     }
 }
