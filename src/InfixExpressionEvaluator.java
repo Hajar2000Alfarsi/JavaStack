@@ -167,4 +167,10 @@ public class InfixExpressionEvaluator {
         printStacks("Calculation");
     }
 
+
+    // Perform arithmetic operations
+    public static double applyOperation(double a, double b, char operator) {
+
+    }
+
 }
