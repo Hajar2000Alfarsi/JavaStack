@@ -120,5 +120,17 @@ public class InfixExpressionEvaluator {
                     performCalculation();
             }
 
+                // Push current operator
+                operatorStack.push(ch);
+
+                printStacks(String.valueOf(ch));
+            }
+
+            else {
+                throw new IllegalArgumentException("Invalid character: " + ch);
+            }
+
+            i++;
+
         }
 }
