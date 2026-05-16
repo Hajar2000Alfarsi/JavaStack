@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class NQueensSolver {
     // Class to store queen position
@@ -42,6 +43,25 @@ public class NQueensSolver {
 
         // Main iterative stack-based solver
         public static void solveNQueens(int n) {
+            // Edge cases
+            if (n == 0) {
+                System.out.println("No board exists.");
+                return;
+            }
+
+            if (n == 1) {
+                Stack<Position> queens = new Stack<>();
+                queens.push(new Position(0, 0));
+
+                System.out.println("One solution exists:");
+                displayBoard(queens, n);
+
+                return;
+            }if (n == 2 || n == 3) {
+                System.out.println("No solutions exist for N = " + n);
+                return;
+            }
+
 
         }
 }
