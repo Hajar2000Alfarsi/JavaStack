@@ -87,6 +87,15 @@ public class LargestRectangleInHistogram {
                 System.out.println("Pop index " + topIndex +
                         " (height = " + heights[topIndex] + ")");
             }
+            // Calculate width
+            int width;
+
+            if (stack.isEmpty()) {
+                width = index;
+            } else {
+                width = index - stack.peek() - 1;
+            }
+
         }
     }
 
