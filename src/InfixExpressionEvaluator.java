@@ -22,5 +22,21 @@ public class InfixExpressionEvaluator {
                 "-5 + 3",
                 "( 8 + 2 ) * ( 3 - 1 )"
         };
+
+        // Evaluate all expressions
+        for (String expression : expressions) {
+
+            System.out.println("\n===================================");
+            System.out.println("Expression: " + expression);
+
+            try {
+                double result = evaluate(expression);
+                System.out.println("Final Result = " + result);
+            } catch (Exception e) {
+                System.out.println("Error: " + e.getMessage());
+            }
+
+            System.out.println("===================================\n");
+        }
     }
 }
