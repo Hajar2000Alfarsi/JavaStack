@@ -268,7 +268,59 @@ public class NQueensSolver {
             }
         }
 
+        // Compare iterative vs recursive performance
+        public static void comparePerformance(int n) {
 
+            System.out.println("\n======================================");
+            System.out.println("Performance Comparison for N = " + n);
+            System.out.println("======================================");
+
+            // Iterative timing
+            allSolutions.clear();
+
+            long iterativeStart = System.nanoTime();
+
+            solveNQueens(n);
+
+            long iterativeEnd = System.nanoTime();
+
+            long iterativeTime =
+                    iterativeEnd - iterativeStart;
+
+            // Recursive timing
+            List<List<Position>> recursiveSolutions =
+                    new ArrayList<>();
+
+            Stack<Position> recursiveStack =
+                    new Stack<>();
+
+            long recursiveStart = System.nanoTime();
+
+            solveRecursive(n,
+                    0,
+                    recursiveStack,
+                    recursiveSolutions);
+
+            long recursiveEnd = System.nanoTime();
+
+            long recursiveTime =
+                    recursiveEnd - recursiveStart;
+
+            // Display results
+            System.out.println("\nIterative Solutions = "
+                    + allSolutions.size());
+
+            System.out.println("Iterative Time = "
+                    + iterativeTime
+                    + " ns");
+
+            System.out.println("\nRecursive Solutions = "
+                    + recursiveSolutions.size());
+
+            System.out.println("Recursive Time = "
+                    + recursiveTime
+                    + " ns");
+        }
 
     }
 }
