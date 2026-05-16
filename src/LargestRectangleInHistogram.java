@@ -49,4 +49,10 @@ public class LargestRectangleInHistogram {
         System.out.println("Largest Rectangle in Binary Matrix = " + maxRectangle);
     }
 
+
+    // Main O(n) stack-based algorithm
+    public static int findLargestRectangle(int[] heights) {
+
+    }
+
 }
