@@ -33,6 +33,20 @@ public class LargestRectangleInHistogram {
 
             System.out.println("======================================");
         }
+
+        // Bonus Test: Largest rectangle in binary matrix
+        System.out.println("\n=========== BONUS: BINARY MATRIX ===========");
+
+        int[][] matrix = {
+                {1, 0, 1, 0, 0},
+                {1, 0, 1, 1, 1},
+                {1, 1, 1, 1, 1},
+                {1, 0, 0, 1, 0}
+        };
+
+        int maxRectangle = largestRectangleInBinaryMatrix(matrix);
+
+        System.out.println("Largest Rectangle in Binary Matrix = " + maxRectangle);
     }
 
 }
