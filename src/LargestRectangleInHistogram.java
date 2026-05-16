@@ -268,6 +268,12 @@ public class LargestRectangleInHistogram {
             System.out.println("\nHistogram from Matrix Row:");
             displayHistogram(heights);
 
+            // Find largest rectangle for this histogram
+            maxArea = Math.max(maxArea,
+                    findLargestRectangle(heights));
+        }
+
+        return maxArea;
 
     }
 
