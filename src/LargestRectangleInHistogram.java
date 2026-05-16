@@ -197,4 +197,11 @@ public class LargestRectangleInHistogram {
 
         System.out.println();
 
+        // Print values
+        for (int height : heights) {
+            System.out.printf("%2d ", height);
+        }
+
+        System.out.println();
+
 }
