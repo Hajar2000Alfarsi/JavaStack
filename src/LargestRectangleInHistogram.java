@@ -111,7 +111,37 @@ public class LargestRectangleInHistogram {
             System.out.println("Stack: " + stack);
         }
 
+        // Process remaining bars in stack
+        while (!stack.isEmpty()) {
+
+            int topIndex = stack.pop();
+
+            System.out.println("Final Pop index " + topIndex +
+                    " (height = " + heights[topIndex] + ")");
+
+            int width;
+
+            if (stack.isEmpty()) {
+                width = index;
+            } else {
+                width = index - stack.peek() - 1;
+            }
+
+            int area = heights[topIndex] * width;
+
+            System.out.println("Area = " +
+                    heights[topIndex] + " x " + width +
+                    " = " + area);
+
+            maxArea = Math.max(maxArea, area);
+
+            System.out.println("Current Max Area = " + maxArea);
+
+            System.out.println("Stack: " + stack);
         }
+
+        return maxArea;
+
     }
 
 }
