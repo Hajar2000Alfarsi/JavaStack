@@ -169,5 +169,14 @@ public class NQueensSolver {
 
             System.out.println();
 
+            // Print column numbers
+            System.out.print("   ");
+
+            for (int col = 0; col < n; col++) {
+                System.out.print(col + " ");
+            }
+
+            System.out.println();
+
     }
 }
