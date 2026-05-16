@@ -101,5 +101,17 @@ public class InfixExpressionEvaluator {
                     performCalculation();
             }
 
-    }
+                // Remove '(' from stack
+                if (!operatorStack.isEmpty()
+                        && operatorStack.peek() == '(') {
+
+                    operatorStack.pop();
+                }
+
+                printStacks(String.valueOf(ch));
+            }
+
+
+
+        }
 }
