@@ -190,4 +190,11 @@ public class LargestRectangleInHistogram {
             System.out.println();
         }
 
+        // Print separator
+        for (int i = 0; i < heights.length; i++) {
+            System.out.print("---");
+        }
+
+        System.out.println();
+
 }
