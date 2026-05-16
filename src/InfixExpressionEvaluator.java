@@ -229,4 +229,16 @@ public class InfixExpressionEvaluator {
                 return 0;
         }
     }
+
+
+    // Check if character is operator
+    public static boolean isOperator(char ch) {
+
+        return ch == '+' ||
+                ch == '-' ||
+                ch == '*' ||
+                ch == '/' ||
+                ch == '^' ||
+                ch == '%';
+    }
 }
