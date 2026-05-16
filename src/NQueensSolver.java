@@ -103,6 +103,23 @@ public class NQueensSolver {
                     col++;
                 }
 
+                // If all queens placed
+                if (row == n) {
+
+                    System.out.println("\nSolution Found!");
+                    displayBoard(queens, n);
+
+                    // Store solution
+                    allSolutions.add(new ArrayList<>(queens));
+
+                    // Backtrack
+                    Position last = queens.pop();
+
+                    row = last.row;
+                    col = last.col + 1;
+
+                    continue;
+                }
 
             }
 }
