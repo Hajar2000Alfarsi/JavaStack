@@ -178,5 +178,33 @@ public class NQueensSolver {
 
             System.out.println();
 
-    }
+            // Print board rows
+            for (int row = 0; row < n; row++) {
+
+                System.out.print(row + "  ");
+
+                for (int col = 0; col < n; col++) {
+
+                    boolean hasQueen = false;
+
+                    // Check queen positions
+                    for (Position queen : queens) {
+
+                        if (queen.row == row
+                                && queen.col == col) {
+
+                            hasQueen = true;
+                            break;
+                        }
+                    }
+                    // Print board cell
+                    if (hasQueen) {
+                        System.out.print("Q ");
+                    } else {
+                        System.out.print(". ");
+                    }
+                }
+
+
+            }
 }
