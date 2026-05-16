@@ -39,4 +39,10 @@ public class InfixExpressionEvaluator {
             System.out.println("===================================\n");
         }
     }
+
+
+    // Main evaluation method
+    public static double evaluate(String expression) {
+
+    }
 }
