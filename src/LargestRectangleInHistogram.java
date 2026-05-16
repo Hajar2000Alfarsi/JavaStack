@@ -96,6 +96,21 @@ public class LargestRectangleInHistogram {
                 width = index - stack.peek() - 1;
             }
 
+            // Calculate area
+            int area = heights[topIndex] * width;
+
+            System.out.println("Area = " +
+                    heights[topIndex] + " x " + width +
+                    " = " + area);
+
+            // Update maximum area
+            maxArea = Math.max(maxArea, area);
+
+            System.out.println("Current Max Area = " + maxArea);
+
+            System.out.println("Stack: " + stack);
+        }
+
         }
     }
 
