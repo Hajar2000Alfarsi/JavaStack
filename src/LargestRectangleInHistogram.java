@@ -174,4 +174,20 @@ public class LargestRectangleInHistogram {
             maxHeight = Math.max(maxHeight, height);
         }
 
+
+        // Print histogram vertically
+        for (int level = maxHeight; level >= 1; level--) {
+
+            for (int height : heights) {
+
+                if (height >= level) {
+                    System.out.print(" █ ");
+                } else {
+                    System.out.print("   ");
+                }
+            }
+
+            System.out.println();
+        }
+
 }
