@@ -155,4 +155,11 @@ public class LargestRectangleInHistogram {
         return width * height;
     }
 
+
+    // Display histogram using ASCII art
+    public static void displayHistogram(int[] heights) {
+
+        System.out.println("\nHistogram:");
+
+
 }
