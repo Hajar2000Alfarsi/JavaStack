@@ -146,4 +146,10 @@ public class InfixExpressionEvaluator {
         return operandStack.pop();
     }
 
+
+    // Perform one calculation
+    public static void performCalculation() {
+
+    }
+
 }
