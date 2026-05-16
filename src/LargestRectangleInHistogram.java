@@ -252,6 +252,23 @@ public class LargestRectangleInHistogram {
 
         int maxArea = 0;
 
+        // Process each row
+        for (int[] row : matrix) {
+
+            // Build histogram heights
+            for (int col = 0; col < columns; col++) {
+
+                if (row[col] == 0) {
+                    heights[col] = 0;
+                } else {
+                    heights[col] += 1;
+                }
+            }
+
+            System.out.println("\nHistogram from Matrix Row:");
+            displayHistogram(heights);
+
+
     }
 
 }
