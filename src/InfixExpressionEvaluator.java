@@ -196,6 +196,18 @@ public class InfixExpressionEvaluator {
 
         case '%':
 
+        // Handle modulo by zero
+        if (b == 0) {
+            throw new ArithmeticException("Modulo by zero");
+        }
 
+        return a % b;
+
+        case '^':
+        return Math.pow(a, b);
+
+        default:
+        throw new IllegalArgumentException("Invalid Operator");
+    }
 
     }
