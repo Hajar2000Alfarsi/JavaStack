@@ -184,30 +184,49 @@ public class InfixExpressionEvaluator {
             case '/':
 
 
+                // Handle division by zero
+                if (b == 0) {
+                    throw new ArithmeticException("Division by zero");
+                }
+
+                return a / b;
+
+            case '%':
+
+                // Handle modulo by zero
+                if (b == 0) {
+                    throw new ArithmeticException("Modulo by zero");
+                }
+
+                return a % b;
+
+            case '^':
+                return Math.pow(a, b);
+
+            default:
+                throw new IllegalArgumentException("Invalid Operator");
         }
-
-
-        // Handle division by zero
-        if (b == 0) {
-            throw new ArithmeticException("Division by zero");
-        }
-
-        return a / b;
-
-        case '%':
-
-        // Handle modulo by zero
-        if (b == 0) {
-            throw new ArithmeticException("Modulo by zero");
-        }
-
-        return a % b;
-
-        case '^':
-        return Math.pow(a, b);
-
-        default:
-        throw new IllegalArgumentException("Invalid Operator");
     }
 
+    // Return operator precedence
+    public static int getPrecedence(char operator) {
+
+        switch (operator) {
+
+            case '+':
+            case '-':
+                return 1;
+
+            case '*':
+            case '/':
+            case '%':
+                return 2;
+
+            case '^':
+                return 3;
+
+            default:
+                return 0;
+        }
     }
+}
