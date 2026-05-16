@@ -99,7 +99,7 @@ public class InfixExpressionEvaluator {
                         && operatorStack.peek() != '(') {
 
                     performCalculation();
-            }
+                }
 
                 // Remove '(' from stack
                 if (!operatorStack.isEmpty()
@@ -118,19 +118,25 @@ public class InfixExpressionEvaluator {
                         && getPrecedence(operatorStack.peek()) >= getPrecedence(ch)) {
 
                     performCalculation();
-            }
+                }
 
                 // Push current operator
                 operatorStack.push(ch);
 
                 printStacks(String.valueOf(ch));
-            }
-
-            else {
+            } else {
                 throw new IllegalArgumentException("Invalid character: " + ch);
             }
 
             i++;
 
         }
+
+        // Perform remaining calculations
+        while (!operatorStack.isEmpty()) {
+
+            performCalculation();
+        }
+    }
+
 }
