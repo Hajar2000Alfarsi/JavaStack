@@ -158,6 +158,13 @@ public class InfixExpressionEvaluator {
 
         // Apply operation
         double result = applyOperation(a, b, operator);
+
+        // Push result back
+        operandStack.push(result);
+
+        System.out.println("Applied: " + a + " " + operator + " " + b + " = " + result);
+
+        printStacks("Calculation");
     }
 
 }
