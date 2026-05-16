@@ -238,6 +238,10 @@ public class LargestRectangleInHistogram {
         return maxArea;
     }
 
+    // Bonus Method:
+    // Find largest rectangle in binary matrix
+    public static int largestRectangleInBinaryMatrix(int[][] matrix) {
 
+    }
 
 }
