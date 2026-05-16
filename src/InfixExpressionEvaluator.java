@@ -56,5 +56,17 @@ public class InfixExpressionEvaluator {
 
             char ch = expression.charAt(i);
 
+            // Handle numbers and decimal values
+            if (isNumber(ch) ||
+                    (ch == '-' && (i == 0 || expression.charAt(i - 1) == '(' || isOperator(expression.charAt(i - 1))))) {
+
+                StringBuilder number = new StringBuilder();
+
+                // Handle unary minus
+                if (ch == '-') {
+                    number.append('-');
+                    i++;
+                }
+
     }
 }
