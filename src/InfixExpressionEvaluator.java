@@ -84,5 +84,13 @@ public class InfixExpressionEvaluator {
                 continue;
             }
 
+            // Handle opening parenthesis
+            else if (ch == '(') {
+
+                operatorStack.push(ch);
+
+                printStacks(String.valueOf(ch));
+            }
+
     }
 }
