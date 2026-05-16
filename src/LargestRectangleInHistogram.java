@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Stack;
 
 public class LargestRectangleInHistogram {
@@ -214,5 +215,29 @@ public class LargestRectangleInHistogram {
         System.out.println("Largest Rectangle Area = "
                 + maxArea);
     }
+
+    // Brute force O(n²) solution
+    public static int bruteForceLargestRectangle(int[] heights) {
+
+        int maxArea = 0;
+
+        for (int i = 0; i < heights.length; i++) {
+
+            int minHeight = heights[i];
+
+            for (int j = i; j < heights.length; j++) {
+
+                minHeight = Math.min(minHeight, heights[j]);
+
+                int area = minHeight * (j - i + 1);
+
+                maxArea = Math.max(maxArea, area);
+            }
+        }
+
+        return maxArea;
+    }
+
+
 
 }
