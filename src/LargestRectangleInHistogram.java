@@ -167,4 +167,11 @@ public class LargestRectangleInHistogram {
             return;
         }
 
+        // Find maximum height
+        int maxHeight = 0;
+
+        for (int height : heights) {
+            maxHeight = Math.max(maxHeight, height);
+        }
+
 }
