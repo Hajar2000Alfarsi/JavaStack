@@ -43,6 +43,10 @@ public class InfixExpressionEvaluator {
 
     // Main evaluation method
     public static double evaluate(String expression) {
+        // Clear stacks before every evaluation
+        operandStack.clear();
+        operatorStack.clear();
+
 
     }
 }
