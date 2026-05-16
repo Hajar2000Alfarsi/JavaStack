@@ -76,7 +76,13 @@ public class InfixExpressionEvaluator {
                     i++;
                 }
 
+                // Push number into operand stack
+                operandStack.push(Double.parseDouble(number.toString()));
 
+                printStacks(number.toString());
+
+                continue;
+            }
 
     }
 }
