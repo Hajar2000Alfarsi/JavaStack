@@ -144,4 +144,15 @@ public class LargestRectangleInHistogram {
 
     }
 
+    // Area calculation helper method
+    public static int calculateArea(int[] heights,
+                                    int start,
+                                    int end,
+                                    int height) {
+
+        int width = end - start + 1;
+
+        return width * height;
+    }
+
 }
