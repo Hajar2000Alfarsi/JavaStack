@@ -241,6 +241,16 @@ public class LargestRectangleInHistogram {
     // Bonus Method:
     // Find largest rectangle in binary matrix
     public static int largestRectangleInBinaryMatrix(int[][] matrix) {
+        // Edge case
+        if (matrix.length == 0) {
+            return 0;
+        }
+
+        int columns = matrix[0].length;
+
+        int[] heights = new int[columns];
+
+        int maxArea = 0;
 
     }
 
