@@ -155,6 +155,9 @@ public class InfixExpressionEvaluator {
         // Pop operands
         double b = operandStack.pop();
         double a = operandStack.pop();
+
+        // Apply operation
+        double result = applyOperation(a, b, operator);
     }
 
 }
