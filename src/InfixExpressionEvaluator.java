@@ -68,5 +68,15 @@ public class InfixExpressionEvaluator {
                     i++;
                 }
 
+                // Build complete number
+                while (i < expression.length() &&
+                        (isNumber(expression.charAt(i)))) {
+
+                    number.append(expression.charAt(i));
+                    i++;
+                }
+
+
+
     }
 }
