@@ -204,7 +204,30 @@ public class NQueensSolver {
                         System.out.print(". ");
                     }
                 }
-
-
+                System.out.println();
             }
+
+            System.out.println();
+
+        }
+
+        // Display all solutions
+        public static void displayAllSolutions(int n) {
+
+            allSolutions.clear();
+
+            long startTime = System.nanoTime();
+
+            solveNQueens(n);
+
+            long endTime = System.nanoTime();
+
+            System.out.println("\nTotal Solutions = "
+                    + allSolutions.size());
+
+            System.out.println("Execution Time = "
+                    + (endTime - startTime)
+                    + " ns");
+        }
+    }
 }
