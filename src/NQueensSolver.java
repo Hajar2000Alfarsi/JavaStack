@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class NQueensSolver {
     // Class to store queen position
     static class Position {
@@ -15,5 +18,8 @@ public class NQueensSolver {
         public String toString() {
             return "(" + row + "," + col + ")";
         }
+
+        // Store all solutions
+        static List<List<Position>> allSolutions = new ArrayList<>();
     }
 }
