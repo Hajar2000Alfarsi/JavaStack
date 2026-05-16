@@ -148,6 +148,8 @@ public class NQueensSolver {
                                      Stack<Position> queens) {
 
             for (Position queen : queens) {
-
+                // Same column
+                if (queen.col == pos.col) {
+                    return false;
             }
 }
