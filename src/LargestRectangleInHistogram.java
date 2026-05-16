@@ -52,7 +52,20 @@ public class LargestRectangleInHistogram {
 
     // Main O(n) stack-based algorithm
     public static int findLargestRectangle(int[] heights) {
+        // Edge case: empty histogram
+        if (heights.length == 0) {
+            System.out.println("Empty histogram.");
+            return 0;
+        }
 
+        stack.clear();
+
+        int maxArea = 0;
+        int index = 0;
+
+        System.out.println("\n--- Step-by-Step Stack Processing ---");
+
+        while (index < heights.length) {
     }
 
 }
