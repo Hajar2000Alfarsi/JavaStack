@@ -121,5 +121,23 @@ public class NQueensSolver {
                     continue;
                 }
 
+                // If queen not placed -> backtrack
+                if (!queenPlaced) {
+
+                    // No more solutions
+                    if (queens.isEmpty()) {
+                        break;
+                    }
+
+                    // Pop previous queen
+                    Position last = queens.pop();
+
+                    System.out.println("\nBacktracking from: " + last);
+                    System.out.println("Stack After Pop: " + queens);
+
+                    row = last.row;
+                    col = last.col + 1;
+                }
+
             }
 }
