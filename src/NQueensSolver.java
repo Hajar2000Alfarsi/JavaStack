@@ -62,6 +62,47 @@ public class NQueensSolver {
                 return;
             }
 
+            // Stack to store queens
+            Stack<Position> queens = new Stack<>();
 
-        }
+            int row = 0;
+            int col = 0;
+
+            while (true) {
+
+                boolean queenPlaced = false;
+
+                // Try placing queen in current row
+                while (col < n) {
+
+                    Position pos = new Position(row, col);
+
+                    // Check if safe
+                    if (isSafe(pos, queens)) {
+
+                        // Push queen onto stack
+                        queens.push(pos);
+
+                        System.out.println("\nPlaced Queen at: " + pos);
+                        System.out.println("Stack: " + queens);
+
+                        // Show detailed steps only for N=4
+                        if (n == 4) {
+                            displayBoard(queens, n);
+                        }
+
+                        queenPlaced = true;
+
+                        row++;
+
+                        col = 0;
+
+                        break;
+                    }
+
+                    col++;
+                }
+
+
+            }
 }
