@@ -241,4 +241,13 @@ public class InfixExpressionEvaluator {
                 ch == '^' ||
                 ch == '%';
     }
+
+
+    // Check if character is number or decimal point
+    public static boolean isNumber(char ch) {
+
+        return Character.isDigit(ch) || ch == '.';
+    }
+
+
 }
