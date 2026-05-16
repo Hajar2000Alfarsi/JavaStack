@@ -111,9 +111,13 @@ public class InfixExpressionEvaluator {
                 printStacks(String.valueOf(ch));
             }
 
-// Handle operators
+            // Handle operators
             else if (isOperator(ch)) {
+                // Apply operators with higher precedence first
+                while (!operatorStack.isEmpty()
+                        && getPrecedence(operatorStack.peek()) >= getPrecedence(ch)) {
 
+                    performCalculation();
             }
 
         }
