@@ -249,5 +249,13 @@ public class InfixExpressionEvaluator {
         return Character.isDigit(ch) || ch == '.';
     }
 
+    // Print stack contents after every step
+    public static void printStacks(String token) {
 
+        System.out.println("\nProcessed Token: " + token);
+
+        System.out.println("Operand Stack: " + operandStack);
+
+        System.out.println("Operator Stack: " + operatorStack);
+    }
 }
