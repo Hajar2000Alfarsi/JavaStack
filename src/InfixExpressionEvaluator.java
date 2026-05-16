@@ -92,5 +92,8 @@ public class InfixExpressionEvaluator {
                 printStacks(String.valueOf(ch));
             }
 
+            // Handle closing parenthesis
+            else if (ch == ')') {
+
     }
 }
