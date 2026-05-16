@@ -52,13 +52,16 @@ public class LargestRectangleInHistogram {
 
 
     // Main O(n) stack-based algorithm
+    // Main O(n) stack-based algorithm
     public static int findLargestRectangle(int[] heights) {
+
         // Edge case: empty histogram
         if (heights.length == 0) {
             System.out.println("Empty histogram.");
             return 0;
         }
 
+        // Clear stack before starting
         stack.clear();
 
         int maxArea = 0;
@@ -66,8 +69,11 @@ public class LargestRectangleInHistogram {
 
         System.out.println("\n--- Step-by-Step Stack Processing ---");
 
+        // Traverse all histogram bars
         while (index < heights.length) {
-            // Push index if stack is empty or current bar is taller
+
+            // Push index if stack is empty
+            // or current height is greater than top bar
             if (stack.isEmpty()
                     || heights[index] >= heights[stack.peek()]) {
 
@@ -82,34 +88,45 @@ public class LargestRectangleInHistogram {
             }
 
             else {
+
                 // Pop top index
                 int topIndex = stack.pop();
 
                 System.out.println("Pop index " + topIndex +
                         " (height = " + heights[topIndex] + ")");
+
+                // Calculate width
+                int width;
+
+                // If stack becomes empty
+                // width = current index
+                if (stack.isEmpty()) {
+                    width = index;
+                }
+
+                // Otherwise calculate width
+                else {
+                    width = index - stack.peek() - 1;
+                }
+
+                // Calculate area
+                int area = heights[topIndex] * width;
+
+                System.out.println("Area = "
+                        + heights[topIndex]
+                        + " x "
+                        + width
+                        + " = "
+                        + area);
+
+                // Update maximum area
+                maxArea = Math.max(maxArea, area);
+
+                System.out.println("Current Max Area = "
+                        + maxArea);
+
+                System.out.println("Stack: " + stack);
             }
-            // Calculate width
-            int width;
-
-            if (stack.isEmpty()) {
-                width = index;
-            } else {
-                width = index - stack.peek() - 1;
-            }
-
-            // Calculate area
-            int area = heights[topIndex] * width;
-
-            System.out.println("Area = " +
-                    heights[topIndex] + " x " + width +
-                    " = " + area);
-
-            // Update maximum area
-            maxArea = Math.max(maxArea, area);
-
-            System.out.println("Current Max Area = " + maxArea);
-
-            System.out.println("Stack: " + stack);
         }
 
         // Process remaining bars in stack
@@ -117,32 +134,44 @@ public class LargestRectangleInHistogram {
 
             int topIndex = stack.pop();
 
-            System.out.println("Final Pop index " + topIndex +
-                    " (height = " + heights[topIndex] + ")");
+            System.out.println("Final Pop index "
+                    + topIndex
+                    + " (height = "
+                    + heights[topIndex]
+                    + ")");
 
             int width;
 
+            // If stack is empty
             if (stack.isEmpty()) {
                 width = index;
-            } else {
+            }
+
+            // Otherwise calculate width
+            else {
                 width = index - stack.peek() - 1;
             }
 
+            // Calculate area
             int area = heights[topIndex] * width;
 
-            System.out.println("Area = " +
-                    heights[topIndex] + " x " + width +
-                    " = " + area);
+            System.out.println("Area = "
+                    + heights[topIndex]
+                    + " x "
+                    + width
+                    + " = "
+                    + area);
 
+            // Update maximum area
             maxArea = Math.max(maxArea, area);
 
-            System.out.println("Current Max Area = " + maxArea);
+            System.out.println("Current Max Area = "
+                    + maxArea);
 
             System.out.println("Stack: " + stack);
         }
 
         return maxArea;
-
     }
 
     // Area calculation helper method
