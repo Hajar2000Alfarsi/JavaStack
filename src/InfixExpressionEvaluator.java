@@ -137,6 +137,13 @@ public class InfixExpressionEvaluator {
 
             performCalculation();
         }
+
+        // Final result
+        if (operandStack.size() != 1) {
+            throw new IllegalArgumentException("Invalid Expression");
+        }
+
+        return operandStack.pop();
     }
 
 }
