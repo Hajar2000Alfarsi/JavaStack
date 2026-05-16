@@ -170,7 +170,20 @@ public class InfixExpressionEvaluator {
 
     // Perform arithmetic operations
     public static double applyOperation(double a, double b, char operator) {
+        switch (operator) {
 
-    }
+            case '+':
+                return a + b;
+
+            case '-':
+                return a - b;
+
+            case '*':
+                return a * b;
+
+            case '/':
+
+
+        }
 
 }
