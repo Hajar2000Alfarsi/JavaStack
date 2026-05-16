@@ -151,6 +151,10 @@ public class InfixExpressionEvaluator {
     public static void performCalculation() {
         // Pop operator
         char operator = operatorStack.pop();
+
+        // Pop operands
+        double b = operandStack.pop();
+        double a = operandStack.pop();
     }
 
 }
