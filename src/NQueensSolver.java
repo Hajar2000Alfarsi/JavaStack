@@ -38,5 +38,10 @@ public class NQueensSolver {
             // Compare iterative vs recursive
             comparePerformance(8);
         }
-    }
+
+
+        // Main iterative stack-based solver
+        public static void solveNQueens(int n) {
+
+        }
 }
